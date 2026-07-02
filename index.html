@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI+科研经验分享</title>
+  <link rel="stylesheet" href="assets/css/arcade.css">
+</head>
+<body>
+<header class="hud">
+  <div class="hud-row">
+    <a class="brand" href="#start"><span class="logo">AI+科研</span><span>RESEARCH AGENT QUEST</span></a>
+    <div class="status">
+      <span class="chip hot">单页闯关</span>
+      <span class="chip">↑↓ 切换</span>
+      <span class="chip">1-5 跳关</span>
+      <span class="chip red">离线可用</span>
+    </div>
+  </div>
+  <div class="progress-shell"><div class="progress-bar" data-progress></div></div>
+</header>
+
+<nav class="map" aria-label="关卡地图">
+  <a href="#start">S</a>
+  <a href="#interaction">交互</a>
+  <a href="#models">模型</a>
+  <a href="#workflow-tools">工具</a>
+  <a href="#level1">01</a>
+  <a href="#level2">02</a>
+  <a href="#level3">03</a>
+  <a href="#level4">04</a>
+  <a href="#level5">05</a>
+  <a href="#tools">T</a>
+  <a href="#final">END</a>
+</nav>
+
+<main>
+  <section class="screen hero" id="start" data-section>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">经验分享</span>
+        <h1>AI+科研<br>经验分享</h1>
+        <p class="subtitle">AI 如何提升论文、代码、绘图与汇报效率。今天不堆工具名，直接看 5 个能复用的科研任务。</p>
+        <div class="hero-actions">
+          <a class="btn red" href="#interaction">START</a>
+          <a class="btn blue" href="#level2">看真实专利案例</a>
+          <a class="btn white" href="case_pack/">素材包目录</a>
+        </div>
+      </div>
+      <div class="cabinet" aria-label="街机控制台">
+        <div class="cabinet-screen">
+          <div class="pixel-title">MISSION</div>
+          <p style="font-size:24px;font-weight:900;margin:0">把 AI 用在真实科研工作流里。</p>
+          <div class="pixel-grid" aria-hidden="true">
+            <span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span>
+            <span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span>
+            <span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="interaction" data-section>
+    <div class="wrap">
+      <div class="section-head compact-head">
+        <h2 class="title">三种 AI 交互方式</h2>
+        <p class="desc">先分清入口：聊天框负责想清楚，IDE 负责做出来，CLI 负责跑起来。</p>
+      </div>
+      <div class="interaction-stage">
+        <div class="interaction-art"><img src="assets/svg/interaction-map.svg" alt="聊天框 IDE CLI 三种交互路线"></div>
+        <div class="interaction-grid">
+          <div class="interaction-card chat">
+            <span class="chip blue">CHAT</span>
+            <h3>聊天框</h3>
+            <p class="tools">ChatGPT / Kimi / 豆包 / Gemini / Claude / 秘塔</p>
+            <p>适合读论文、翻译、总结、头脑风暴、写提纲。</p>
+            <b>特点：最快开始，但不能直接进项目干活。</b>
+          </div>
+          <div class="interaction-card ide">
+            <span class="chip hot">IDE</span>
+            <h3>编程 IDE</h3>
+            <p class="tools">Trae / Cursor / VS Code + 插件 / Codex App</p>
+            <p>适合读项目、改代码、跑脚本、看报错、反复调试。</p>
+            <b>特点：科研代码和小工具最常用。</b>
+          </div>
+          <div class="interaction-card cli">
+            <span class="chip red">CLI</span>
+            <h3>命令行工具</h3>
+            <p class="tools">Codex CLI / Claude Code / shell 自动化</p>
+            <p>适合服务器、批处理、远程环境、长时间自动任务。</p>
+            <b>特点：更专业，适合有服务器场景的人。</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="models" data-section>
+    <div class="wrap">
+      <div class="section-head compact-head">
+        <h2 class="title">模型怎么选</h2>
+        <p class="desc">先用免费入口建立习惯，重要任务再考虑会员和 Agent 工具。</p>
+      </div>
+      <div class="model-stage">
+        <div class="model-art"><img src="assets/svg/model-stack.svg" alt="模型选择卡带动画"></div>
+        <div class="model-grid">
+          <div class="model-card recommended">
+            <span class="chip hot">推荐组合</span>
+            <h3>ChatGPT + Kimi + 豆包 + Gemini</h3>
+            <p>聊天框里都能免费开始用，只是会有额度、排队或模型能力限制。</p>
+          </div>
+          <div class="model-card domestic"><h3>Kimi / DeepSeek / 豆包</h3><div class="model-price">免费可用 · 排队/限额</div><p>中文友好，适合日常读论文和材料整理；会员或 API 按需补充。</p></div>
+          <div class="model-card chatgpt"><h3>ChatGPT</h3><div class="model-price">$0 / Plus $20</div><p>免费可用但模型能力一般；重要写作、代码和多模态任务建议开会员。</p></div>
+          <div class="model-card claude"><h3>Claude</h3><div class="model-price">Pro $20 · Max $100+</div><p>能力强，但账号、验证、封号风险和使用门槛高，本场不作为主推荐。</p></div>
+          <div class="model-card gemini"><h3>Gemini</h3><div class="model-price">免费入口 · 优惠看活动</div><p>能力也不错，可作为备用；具体价格以购买页或活动页为准。</p></div>
+          <div class="model-card threshold"><h3>国外门槛</h3><div class="model-price">手机号 / 国际卡 / 网络</div><p>还可能遇到风控验证、人脸验证、账号稳定性问题。</p></div>
+        </div>
+      </div>
+      <p class="source-note">价格和优惠变化很快，页面只做现场决策参考。</p>
+    </div>
+  </section>
+
+  <section class="screen" id="workflow-tools" data-section>
+    <div class="wrap">
+      <div class="section-head compact-head">
+        <h2 class="title">我推荐哪套工具</h2>
+        <p class="desc">聊天框解决理解，IDE 解决项目，CLI 解决服务器和自动化。</p>
+      </div>
+      <div class="ide-stage">
+        <div class="ide-art"><img src="assets/svg/ide-choice.svg" alt="Codex App Trae VS Code Codex CLI 工具推荐图"></div>
+        <div class="tool-reco">
+          <div class="reco-main"><span class="chip red">主推荐</span><h3>Codex App + Trae IDE</h3><p>用 Codex 做复杂任务规划和代码协作，用 Trae 作为更友好的 AI 编程 IDE。</p></div>
+          <div class="reco-grid">
+            <div><h4>为什么 Trae</h4><p>字节基于 AI 底座构建，对中文用户更友好，适合编辑项目。</p></div>
+            <div><h4>VS Code 用户</h4><p>可以平滑迁移到 Trae；插件生态和操作习惯大体相近。</p></div>
+            <div><h4>注意事项</h4><p>少见插件和高阶操作可能没完全适配，VS Code 可作为备选。</p></div>
+            <div><h4>实际覆盖</h4><p>Python、Markdown、LaTeX、SSH 远程连接服务器都能覆盖。</p></div>
+          </div>
+          <div class="server-note">有服务器或批处理场景：补充使用 <b>Codex CLI</b>。</div>
+        </div>
+      </div>
+      <div class="capability-row">
+        <div><b>聊天框</b><span>上下文靠粘贴，适合问答和材料理解。</span></div>
+        <div><b>IDE</b><span>能读文件、改项目、运行验证，适合科研代码。</span></div>
+        <div><b>CLI</b><span>能在命令行和服务器里跑自动化任务。</span></div>
+      </div>
+    </div>
+  </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="level1" data-section>
+    <div class="wrap level-card">
+      <div class="level-art"><img src="assets/svg/agent-battle.svg" alt="代码调试机器人动画"></div>
+      <div class="level-content">
+        <div class="level-top"><span class="level-no">LEVEL 01</span><span class="chip blue">代码修改与自动调试</span></div>
+        <span class="pain">痛点：报错来回复制，项目上下文丢失</span>
+        <h2 class="level-title">从“贴报错”到“进项目修”</h2>
+        <div class="flow">
+          <div class="step"><b>输入</b><span>Python 项目 + CSV + 报错</span></div>
+          <div class="step"><b>Agent 动作</b><span>读目录、找入口、改脚本</span></div>
+          <div class="step"><b>输出</b><span>summary.csv + trend.txt</span></div>
+          <div class="step"><b>核验</b><span>公式、字段、结果可复现</span></div>
+        </div>
+        <details class="details">
+          <summary>展开提示词与素材入口</summary>
+          <div class="detail-grid">
+            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p1">COPY</button></div><pre id="p1">请先阅读当前 Python 项目，不要立刻修改。
+
+目标：修复实验数据汇总脚本，让它能读取 data/experiment_log.csv，输出 results/summary.csv 和 results/trend.txt。
+
+请先告诉我项目结构、入口文件、当前 bug、最小修改方案和运行验证命令。确认后再改文件。</pre></div>
+            <div class="verify"><h4>人工核验点</h4><ul><li>loss/time_s 是否按数值处理</li><li>results 目录是否自动创建</li><li>输出是否和 expected 对得上</li></ul><div class="path">case_pack/01_code_debug</div></div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="level2" data-section>
+    <div class="wrap level-card">
+      <div class="level-art"><img src="assets/svg/pdf-belt.svg" alt="PDF 传送带动画"></div>
+      <div class="level-content">
+        <div class="level-top"><span class="level-no">LEVEL 02</span><span class="chip hot">真实专利材料</span></div>
+        <span class="pain">痛点：一批专利 PDF 手工录字段慢且容易错</span>
+        <h2 class="level-title">36 个 PDF → 成果统计表</h2>
+        <div class="flow">
+          <div class="step"><b>输入</b><span>真实 CNIPA 专利 PDF</span></div>
+          <div class="step"><b>Agent 动作</b><span>提取名称、编号、日期</span></div>
+          <div class="step"><b>输出</b><span>CSV + TXT 目录</span></div>
+          <div class="step"><b>核验</b><span>专利号、日期、分类</span></div>
+        </div>
+        <details class="details" open>
+          <summary>展开提示词与真实结果</summary>
+          <div class="detail-grid">
+            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p2">COPY</button></div><pre id="p2">请基于 sample_pdfs 中的专利 PDF 和现有脚本，完成一次可复现的专利整理演示。
+
+要求：说明字段、运行样本、输出 CSV/TXT、标出人工核验字段，不编造 PDF 中不存在的信息。</pre></div>
+            <div class="verify"><h4>真实结果摘要</h4><ul><li>完整材料：36 个 PDF</li><li>已授权：23 项</li><li>已申请：13 项</li><li>交付包含 3 个样本 PDF</li></ul><div class="path">case_pack/02_patent_pdf</div></div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="level3" data-section>
+    <div class="wrap level-card">
+      <div class="level-art"><img src="assets/svg/latex-lock.svg" alt="LaTeX 结构锁动画"></div>
+      <div class="level-content">
+        <div class="level-top"><span class="level-no">LEVEL 03</span><span class="chip">LaTeX 论文翻译</span></div>
+        <span class="pain">痛点：翻译会把公式、引用和标签弄乱</span>
+        <h2 class="level-title">翻译文字，锁住结构</h2>
+        <div class="flow">
+          <div class="step"><b>输入</b><span>中文 tex + 术语表</span></div>
+          <div class="step"><b>Agent 动作</b><span>分段翻译，保护命令</span></div>
+          <div class="step"><b>输出</b><span>英文 tex + 检查清单</span></div>
+          <div class="step"><b>核验</b><span>术语、公式、引用未丢</span></div>
+        </div>
+        <details class="details">
+          <summary>展开提示词与结构保护对象</summary>
+          <div class="detail-grid">
+            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p3">COPY</button></div><pre id="p3">请把 draft_cn.tex 翻译为英文学术论文表达。
+
+硬性约束：不修改任何 LaTeX 命令、label、ref、cite、公式和图表环境；只翻译自然语言；统一 glossary.md 中的术语。</pre></div>
+            <div class="verify"><h4>结构保护</h4><ul><li>equation / label / ref</li><li>cite / figure / table</li><li>bibliography 和术语表</li></ul><div class="path">case_pack/03_latex_translation</div></div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="level4" data-section>
+    <div class="wrap level-card">
+      <div class="level-art"><img src="assets/svg/plot-scan.svg" alt="论文图曲线扫描动画"></div>
+      <div class="level-content">
+        <div class="level-top"><span class="level-no">LEVEL 04</span><span class="chip blue">论文图复现</span></div>
+        <span class="pain">痛点：数据有了，但图不像论文图</span>
+        <h2 class="level-title">把“好看”拆成绘图参数</h2>
+        <div class="flow">
+          <div class="step"><b>输入</b><span>参考风格 + CSV</span></div>
+          <div class="step"><b>Agent 动作</b><span>分析配色、线型、字体</span></div>
+          <div class="step"><b>输出</b><span>PNG + PDF + 脚本</span></div>
+          <div class="step"><b>核验</b><span>坐标、单位、图例</span></div>
+        </div>
+        <details class="details">
+          <summary>展开提示词与图件输出</summary>
+          <div class="detail-grid">
+            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p4">COPY</button></div><pre id="p4">请根据 data/solver_convergence.csv 生成论文风格 Matplotlib 图。
+
+要求：高对比配色、粗线条、清晰 marker、右上角图例；输出 PNG 和 PDF；代码参数集中，方便替换数据。</pre></div>
+            <div class="verify"><h4>输出文件</h4><ul><li>outputs/paper_style_plot.png</li><li>outputs/paper_style_plot.pdf</li><li>plot_paper_style.py</li></ul><div class="path">case_pack/04_plot_style</div></div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="level5" data-section>
+    <div class="wrap level-card">
+      <div class="level-art"><img src="assets/svg/web-factory.svg" alt="网页小工具工厂动画"></div>
+      <div class="level-content">
+        <div class="level-top"><span class="level-no">LEVEL 05</span><span class="chip hot">网页 / 小工具</span></div>
+        <span class="pain">痛点：想法很多，但做成可演示项目很慢</span>
+        <h2 class="level-title">科研想法 → 离线可用 Demo</h2>
+        <div class="flow">
+          <div class="step"><b>输入</b><span>主题、流程、数据</span></div>
+          <div class="step"><b>Agent 动作</b><span>生成 HTML/CSS/JS</span></div>
+          <div class="step"><b>输出</b><span>可打开小工具</span></div>
+          <div class="step"><b>核验</b><span>内容准确、路径可用</span></div>
+        </div>
+        <details class="details">
+          <summary>展开提示词与 Demo 入口</summary>
+          <div class="detail-grid">
+            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p5">COPY</button></div><pre id="p5">请把这个科研想法做成一个离线 HTML demo。
+
+要求：纯 HTML/CSS/JS，无后端、无 CDN；首页直接展示可交互工具；页面适合现场展示；所有文件使用相对路径。</pre></div>
+            <div class="verify"><h4>可迁移场景</h4><ul><li>组会汇报页</li><li>数据展示页</li><li>参数探索小工具</li></ul><div class="path">case_pack/05_report_tool/index.html</div></div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="tools" data-section>
+    <div class="wrap">
+      <div class="section-head"><h2 class="title">更多科研效率连招</h2><p class="desc">把工具串起来，而不是指望一个工具做完所有事。</p></div>
+      <div class="tool-grid">
+        <div class="tool"><h3>Zotero + AI</h3><p>文献管理、BibTeX、综述表。</p></div>
+        <div class="tool"><h3>Doc2X + AI</h3><p>PDF 转 Word / LaTeX / Markdown 后再校对。</p></div>
+        <div class="tool"><h3>Kimi / 秘塔 / ChatGPT</h3><p>快速读论文、备课、整理组会材料。</p></div>
+        <div class="tool"><h3>图像能力</h3><p>科研配图、技术路线图、方法示意图。</p></div>
+        <div class="tool"><h3>Trae / Cursor / Codex</h3><p>把想法变成脚本、网页和小工具。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="portfolio" data-section>
+    <div class="wrap">
+      <div class="section-head"><h2 class="title">个人成品展示</h2><p class="desc">目的不是炫技，而是说明 AI Agent 能把想法推进成可用项目。</p></div>
+      <div class="portfolio-grid">
+        <div class="cart"><h3>HTML 汇报页面</h3><p>交互展示、图表嵌入、长期保存。</p></div>
+        <div class="cart"><h3>个人网站</h3><p>项目、论文、简历、联系方式。</p></div>
+        <div class="cart"><h3>考研辅导网站</h3><p>课程信息、资料目录、答疑入口。</p></div>
+        <div class="cart"><h3>闲鱼发货工具</h3><p>重复流程自动化，迁移到科研批处理。</p></div>
+        <div class="cart"><h3>本展示站</h3><p>现场分享也可以做成可复用项目。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="final" data-section>
+    <div class="wrap">
+      <div class="final-card">
+        <h2>模型负责理解，工具负责执行，人负责判断。</h2>
+        <p>科研核心结论、数据可信度、公式推导和事实边界，永远要回到人来核验。</p>
+        <div class="actions"><a class="btn red" href="#start">RESTART</a><a class="btn blue" href="docs/operation_guide.md">操作指南</a><a class="btn white" href="case_pack/">打开素材包</a></div>
+        <p style="font-size:16px;margin-top:18px">快捷键：<span class="kbd">↑</span>/<span class="kbd">↓</span> 切换，<span class="kbd">1</span>-<span class="kbd">5</span> 跳关，<span class="kbd">Home</span>/<span class="kbd">End</span> 首尾。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">AI+科研 Agent Quest · 离线单页展示 · 素材包随站点交付</div></footer>
+<script src="assets/js/showcase.js"></script>
+</body>
+</html>

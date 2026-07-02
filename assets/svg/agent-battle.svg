@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <style>
+    .s{stroke:#fff;stroke-width:6;stroke-linejoin:round}.w{fill:#fff}.r{fill:#e8352f}.c{fill:#46d9ff}.y{fill:#ffd447}.g{fill:#1fbf75}
+    .bot{animation:jump 1.2s steps(2,end) infinite}.bolt{animation:flash .8s steps(2,end) infinite}.line{animation:dash 1.2s linear infinite}.spark{animation:spark 1.4s linear infinite}.eye{animation:eye .9s steps(2,end) infinite}.beam{animation:beam 1.6s linear infinite}
+    @keyframes jump{50%{transform:translateY(-12px)}}@keyframes flash{50%{opacity:.25}}@keyframes dash{to{stroke-dashoffset:-48}}@keyframes spark{0%{opacity:0;transform:translateY(0)}35%{opacity:1}100%{opacity:0;transform:translateY(-35px)}}@keyframes eye{50%{fill:#ffd447}}@keyframes beam{to{stroke-dashoffset:-80}}
+  </style>
+  <rect width="320" height="320" fill="#16120f"/>
+  <path class="s beam" d="M58 44h204M58 274h204" fill="none" stroke-dasharray="10 10"/>
+  <g class="bot">
+    <rect class="s c" x="92" y="102" width="136" height="96"/>
+    <rect class="s y" x="122" y="62" width="76" height="42"/>
+    <rect class="eye w" x="122" y="132" width="28" height="22"/><rect class="eye w" x="174" y="132" width="28" height="22"/>
+    <rect class="s g" x="118" y="208" width="28" height="46"/><rect class="s g" x="176" y="208" width="28" height="46"/>
+  </g>
+  <path class="s line" d="M36 74h58M226 72h62M38 260h70M214 260h70" fill="none" stroke-dasharray="12 12"/>
+  <path class="bolt r" d="M248 126l-32 52h28l-16 56 54-76h-32l22-32z"/>
+  <rect class="spark y" x="54" y="172" width="12" height="12"/><rect class="spark c" x="264" y="82" width="10" height="10" style="animation-delay:.3s"/><rect class="spark g" x="236" y="252" width="14" height="14" style="animation-delay:.6s"/>
+  <text x="44" y="296" fill="#fff" font-family="Arial" font-weight="900" font-size="24">READ · PATCH · RUN</text>
+</svg>

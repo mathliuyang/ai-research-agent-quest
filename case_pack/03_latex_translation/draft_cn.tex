@@ -1,0 +1,20 @@
+\section{方法}
+\label{sec:method}
+
+本文考虑一维间断系数椭圆方程。为了在神经网络训练中严格表达界面条件，我们引入变限积分映射，将原始坐标 $x$ 映射到新的计算坐标 $\xi$。
+
+\begin{equation}
+\label{eq:mapping}
+\xi(x)=\int_{0}^{x}\frac{1}{a(s)}\,ds .
+\end{equation}
+
+式 \ref{eq:mapping} 中，$a(s)$ 表示分段常数扩散系数。该映射可以减弱系数跳跃对解函数光滑性的影响，从而提高物理约束神经网络的训练稳定性。
+
+如图 \ref{fig:workflow} 所示，整体流程包括区域划分、坐标映射、网络训练和误差评估。损失函数定义为
+
+\begin{equation}
+\label{eq:loss}
+\mathcal{L}=\mathcal{L}_{r}+\lambda_b\mathcal{L}_{b}.
+\end{equation}
+
+相关思想与物理约束神经网络的经典框架有关 \cite{raissi2019physics}。

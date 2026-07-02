@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <style>
+    .s{stroke:#fff;stroke-width:6;stroke-linejoin:round}.gear{animation:spin 2s linear infinite;transform-origin:96px 106px}.card{animation:rise 1.8s ease-in-out infinite}.belt{animation:belt 1s linear infinite}.pixel{animation:drop 1.4s ease-in infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}@keyframes rise{50%{transform:translateY(-18px)}}@keyframes belt{to{stroke-dashoffset:-36}}@keyframes drop{0%{transform:translateY(-40px);opacity:0}35%{opacity:1}100%{transform:translateY(78px);opacity:0}}
+  </style>
+  <rect width="320" height="320" fill="#16120f"/>
+  <rect class="s" x="54" y="150" width="212" height="88" fill="#e8352f"/>
+  <path class="s belt" d="M70 174h180M70 212h180" fill="none" stroke-dasharray="12 12"/>
+  <g class="gear"><circle class="s" cx="96" cy="106" r="34" fill="#ffd447"/><path class="s" d="M96 54v28M96 130v28M44 106h28M120 106h28"/></g>
+  <g class="card"><rect class="s" x="152" y="64" width="98" height="70" fill="#46d9ff"/><path d="M168 88h60M168 108h38" stroke="#16120f" stroke-width="6"/></g>
+  <path class="s" d="M80 238v34h160v-34" fill="#1fbf75"/>
+  <rect class="pixel" x="218" y="76" width="14" height="14" fill="#ffd447"/><rect class="pixel" x="246" y="92" width="12" height="12" fill="#46d9ff" style="animation-delay:.35s"/><rect class="pixel" x="184" y="92" width="10" height="10" fill="#ff6aaa" style="animation-delay:.7s"/>
+  <text x="54" y="292" fill="#fff" font-family="Arial" font-weight="900" font-size="24">IDEA → HTML DEMO</text>
+</svg>

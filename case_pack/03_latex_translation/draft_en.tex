@@ -1,0 +1,20 @@
+\section{Method}
+\label{sec:method}
+
+We consider a one-dimensional elliptic equation with discontinuous coefficients. To enforce the interface condition in neural-network training, we introduce a variable-limit integral mapping that transforms the original coordinate $x$ into a new computational coordinate $\xi$.
+
+\begin{equation}
+\label{eq:mapping}
+\xi(x)=\int_{0}^{x}\frac{1}{a(s)}\,ds .
+\end{equation}
+
+In Eq. \ref{eq:mapping}, $a(s)$ denotes the piecewise constant diffusion coefficient. This mapping mitigates the influence of coefficient jumps on the smoothness of the solution, thereby improving the training stability of the physics-informed neural network.
+
+As shown in Fig. \ref{fig:workflow}, the overall workflow consists of domain partitioning, coordinate mapping, network training, and error evaluation. The loss function is defined as
+
+\begin{equation}
+\label{eq:loss}
+\mathcal{L}=\mathcal{L}_{r}+\lambda_b\mathcal{L}_{b}.
+\end{equation}
+
+The proposed idea is related to the classical framework of physics-informed neural networks \cite{raissi2019physics}.

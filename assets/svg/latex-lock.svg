@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <style>
+    .s{stroke:#fff;stroke-width:6;stroke-linejoin:round}.code{animation:type 1.6s steps(4,end) infinite}.lock{animation:pulse 1s ease-in-out infinite}.cursor{animation:cursor .7s steps(2,end) infinite}.seal{animation:seal 1.8s ease-in-out infinite}
+    @keyframes type{50%{opacity:.35}}@keyframes pulse{50%{transform:scale(1.08);transform-origin:160px 144px}}@keyframes cursor{50%{opacity:0}}@keyframes seal{50%{transform:translateX(34px)}}
+  </style>
+  <rect width="320" height="320" fill="#16120f"/>
+  <rect class="s" x="38" y="44" width="244" height="210" fill="#fff"/>
+  <g font-family="Consolas" font-size="22" font-weight="900" fill="#16120f">
+    <text class="code" x="58" y="88">\label{eq:loss}</text>
+    <text class="code" x="58" y="126">\ref{fig:flow}</text>
+    <text class="code" x="58" y="164">\cite{pinn}</text>
+    <text class="code" x="58" y="202">E = mc^2</text>
+  </g>
+  <g class="lock">
+    <rect class="s" x="124" y="134" width="72" height="62" fill="#ffd447"/>
+    <path class="s" d="M138 134v-28c0-30 44-30 44 0v28" fill="none"/>
+  </g>
+  <rect class="cursor" x="244" y="185" width="10" height="26" fill="#e8352f"/>
+  <rect class="seal" x="56" y="222" width="44" height="12" fill="#1fbf75"/>
+  <text x="48" y="292" fill="#fff" font-family="Arial" font-weight="900" font-size="24">TRANSLATE TEXT · KEEP STRUCTURE</text>
+</svg>

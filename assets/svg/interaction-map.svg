@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <style>
+    .s{stroke:#fff;stroke-width:6;stroke-linejoin:round}.flow{stroke-dasharray:12 10;animation:dash 1s linear infinite}.node{animation:pop 1.8s ease-in-out infinite}
+    .n2{animation-delay:.2s}.n3{animation-delay:.4s}@keyframes dash{to{stroke-dashoffset:-44}}@keyframes pop{50%{transform:translateY(-8px)}}
+  </style>
+  <rect width="360" height="300" fill="#16120f"/>
+  <path class="s flow" d="M70 74h220M70 150h220M70 226h220" fill="none"/>
+  <g class="node"><rect class="s" x="42" y="36" width="128" height="76" fill="#46d9ff"/><text x="72" y="83" font-family="Arial" font-weight="900" font-size="24" fill="#16120f">CHAT</text></g>
+  <g class="node n2"><rect class="s" x="118" y="112" width="128" height="76" fill="#1fbf75"/><text x="154" y="160" font-family="Arial" font-weight="900" font-size="24" fill="#16120f">IDE</text></g>
+  <g class="node n3"><rect class="s" x="190" y="188" width="128" height="76" fill="#ffd447"/><text x="230" y="236" font-family="Arial" font-weight="900" font-size="24" fill="#16120f">CLI</text></g>
+  <text x="54" y="286" fill="#fff" font-family="Arial" font-weight="900" font-size="18">THINK · BUILD · RUN</text>
+</svg>

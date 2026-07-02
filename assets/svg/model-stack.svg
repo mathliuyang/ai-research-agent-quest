@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300">
+  <style>
+    .s{stroke:#fff;stroke-width:6;stroke-linejoin:round}.card{animation:slide 2s ease-in-out infinite}.c2{animation-delay:.2s}.c3{animation-delay:.4s}.coin{animation:coin 1s steps(2,end) infinite}
+    @keyframes slide{50%{transform:translateX(16px)}}@keyframes coin{50%{fill:#46d9ff;transform:translateY(-8px)}}
+  </style>
+  <rect width="320" height="300" fill="#16120f"/>
+  <g class="card"><rect class="s" x="44" y="38" width="220" height="52" fill="#1fbf75"/><text x="72" y="73" font-family="Arial" font-weight="900" font-size="22" fill="#16120f">Kimi / DeepSeek</text></g>
+  <g class="card c2"><rect class="s" x="60" y="106" width="220" height="52" fill="#ffd447"/><text x="94" y="141" font-family="Arial" font-weight="900" font-size="22" fill="#16120f">ChatGPT</text></g>
+  <g class="card c3"><rect class="s" x="44" y="174" width="220" height="52" fill="#8ed3ff"/><text x="88" y="209" font-family="Arial" font-weight="900" font-size="22" fill="#16120f">Gemini</text></g>
+  <circle class="s coin" cx="88" cy="254" r="18" fill="#ffd447"/><circle class="s coin" cx="136" cy="254" r="18" fill="#ffd447" style="animation-delay:.2s"/><circle class="s coin" cx="184" cy="254" r="18" fill="#ffd447" style="animation-delay:.4s"/>
+  <text x="226" y="262" fill="#fff" font-family="Arial" font-weight="900" font-size="18">FREE?</text>
+</svg>

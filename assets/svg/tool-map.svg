@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" role="img" aria-labelledby="title desc">
+  <title id="title">模型工具成本仪表盘</title>
+  <desc id="desc">模型卡带、价格硬币和工具路线组成的科研装备选择动画</desc>
+  <style>
+    .s{stroke:#fff;stroke-width:6;stroke-linejoin:round}
+    .ink{stroke:#16120f;stroke-width:5;stroke-linejoin:round}
+    .cart{animation:insert 1.8s ease-in-out infinite}
+    .coin{animation:coin 1.1s steps(2,end) infinite;transform-origin:center}
+    .coin2{animation-delay:.18s}.coin3{animation-delay:.36s}.coin4{animation-delay:.54s}
+    .flow{stroke-dasharray:14 10;animation:dash 1.1s linear infinite}
+    .blink{animation:blink .9s steps(2,end) infinite}
+    @keyframes insert{50%{transform:translateX(18px)}}
+    @keyframes coin{50%{transform:translateY(-10px);fill:#46d9ff}}
+    @keyframes dash{to{stroke-dashoffset:-48}}
+    @keyframes blink{50%{opacity:.2}}
+  </style>
+  <rect width="620" height="260" fill="#16120f"/>
+  <rect class="ink" x="24" y="24" width="572" height="212" fill="#fff7df"/>
+  <g class="cart">
+    <rect class="ink" x="52" y="54" width="132" height="78" fill="#e8352f"/>
+    <rect x="72" y="72" width="92" height="20" fill="#fff"/>
+    <text x="72" y="118" font-family="Arial, sans-serif" font-size="24" font-weight="900" fill="#fff">MODEL</text>
+  </g>
+  <rect class="ink" x="208" y="48" width="148" height="92" fill="#46d9ff"/>
+  <text x="232" y="82" font-family="Arial, sans-serif" font-size="24" font-weight="900" fill="#16120f">PRICE</text>
+  <circle class="ink coin" cx="238" cy="112" r="16" fill="#ffd447"/>
+  <circle class="ink coin coin2" cx="276" cy="112" r="16" fill="#ffd447"/>
+  <circle class="ink coin coin3" cx="314" cy="112" r="16" fill="#ffd447"/>
+  <rect class="ink" x="384" y="48" width="158" height="92" fill="#1fbf75"/>
+  <text x="412" y="82" font-family="Arial, sans-serif" font-size="24" font-weight="900" fill="#16120f">ACCESS</text>
+  <text class="blink" x="418" y="116" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#16120f">VERIFY</text>
+  <path class="s flow" d="M106 164h412" fill="none"/>
+  <rect class="ink" x="74" y="174" width="112" height="44" fill="#8ee5ff"/>
+  <rect class="ink" x="254" y="174" width="112" height="44" fill="#b9ffc8"/>
+  <rect class="ink" x="434" y="174" width="112" height="44" fill="#ffe77a"/>
+  <text x="101" y="203" font-family="Arial, sans-serif" font-size="20" font-weight="900" fill="#16120f">CHAT</text>
+  <text x="288" y="203" font-family="Arial, sans-serif" font-size="20" font-weight="900" fill="#16120f">IDE</text>
+  <text x="470" y="203" font-family="Arial, sans-serif" font-size="20" font-weight="900" fill="#16120f">CLI</text>
+  <path d="M206 164l22 14-22 14zM386 164l22 14-22 14z" fill="#fff"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <style>
+    .s{stroke:#fff;stroke-width:6;stroke-linejoin:round}.curve{fill:none;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 2.2s ease-in-out infinite}.scan{animation:sweep 1.7s linear infinite}.tick{animation:tick 1s steps(2,end) infinite}.legend{animation:pop 1.6s ease-in-out infinite}
+    @keyframes draw{60%,100%{stroke-dashoffset:0}}@keyframes sweep{from{transform:translateX(-80px)}to{transform:translateX(230px)}}@keyframes tick{50%{opacity:.25}}@keyframes pop{50%{transform:translateY(-6px)}}
+  </style>
+  <rect width="320" height="320" fill="#16120f"/>
+  <rect class="s" x="42" y="48" width="236" height="190" fill="#fff"/>
+  <path d="M72 206h178M72 206V78" stroke="#16120f" stroke-width="6" fill="none"/>
+  <g class="tick" stroke="#16120f" stroke-width="4"><path d="M112 206v-10M152 206v-10M192 206v-10M232 206v-10M72 166h10M72 126h10M72 86h10"/></g>
+  <path class="curve" d="M76 190C116 132 142 158 172 112S222 84 250 94" stroke="#e8352f" stroke-width="8"/>
+  <path class="curve" d="M76 178C116 156 145 142 174 138S222 128 250 116" stroke="#2d7dd2" stroke-width="8" style="animation-delay:.3s"/>
+  <rect class="scan" x="72" y="70" width="22" height="148" fill="rgba(31,191,117,.45)"/>
+  <g class="legend"><rect x="168" y="86" width="70" height="42" fill="#fff" stroke="#16120f" stroke-width="4"/><path d="M178 100h22M178 116h22" stroke="#e8352f" stroke-width="5"/><path d="M206 100h22M206 116h22" stroke="#2d7dd2" stroke-width="5"/></g>
+  <text x="62" y="292" fill="#fff" font-family="Arial" font-weight="900" font-size="24">STYLE → MATPLOTLIB</text>
+</svg>

@@ -1,0 +1,4 @@
+method,best_loss,avg_time_s,runs
+Baseline,0.1290,41.53,4
+FCM-PINN,0.0210,84.70,4
+PINN,0.0680,79.23,4
