@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -21,10 +21,12 @@
 </header>
 
 <nav class="map" aria-label="关卡地图">
-  <a href="#start">S</a>
-  <a href="#interaction">交互</a>
+  <a href="#start">AI+科研</a>
+  <a href="#vibe-coding">Coding</a>
+  <a href="#vibe-research">Research</a>
+  <a href="#interaction-modes">入口</a>
   <a href="#models">模型</a>
-  <a href="#workflow-tools">工具</a>
+  <a href="#recommendation">推荐</a>
   <a href="#level1">01</a>
   <a href="#level2">02</a>
   <a href="#level3">03</a>
@@ -36,62 +38,195 @@
 
 <main>
   <section class="screen hero" id="start" data-section>
-    <div class="wrap hero-grid">
-      <div>
+    <div class="wrap opening-grid">
+      <div class="opening-copy">
         <span class="eyebrow">经验分享</span>
-        <h1>AI+科研<br>经验分享</h1>
-        <p class="subtitle">AI 如何提升论文、代码、绘图与汇报效率。今天不堆工具名，直接看 5 个能复用的科研任务。</p>
+        <h1>AI 加科研</h1>
+        <p class="subtitle">今天围绕两条主线展开：<b>Vibe Coding</b> 和 <b>Vibe Research</b>。核心不是“让 AI 替我做科研”，而是用 AI 重组科研工作流。</p>
         <div class="hero-actions">
-          <a class="btn red" href="#interaction">START</a>
-          <a class="btn blue" href="#level2">看真实专利案例</a>
-          <a class="btn white" href="case_pack/">素材包目录</a>
+          <a class="btn red" href="#vibe-coding">START</a>
+          <a class="btn blue" href="#recommendation">看工具推荐</a>
+          <a class="btn white" href="#level1">进入案例</a>
         </div>
       </div>
-      <div class="cabinet" aria-label="街机控制台">
+      <div class="cabinet opening-cabinet" aria-label="街机控制台">
         <div class="cabinet-screen">
           <div class="pixel-title">MISSION</div>
-          <p style="font-size:24px;font-weight:900;margin:0">把 AI 用在真实科研工作流里。</p>
+          <p style="font-size:22px;font-weight:900;margin:0">用 AI 工具重组科研工作流。</p>
           <div class="pixel-grid" aria-hidden="true">
             <span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span>
             <span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span>
-            <span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span><span class="px"></span>
           </div>
+        </div>
+      </div>
+      <div class="theme-pair">
+        <a class="theme-card vibe" href="#vibe-coding"><span>PART 01</span><h2>Vibe Coding</h2><p>用自然语言表达开发意图，由 AI 生成、修改、调试代码，人负责目标描述、运行验证和持续迭代。</p></a>
+        <a class="theme-card tools-theme" href="#vibe-research"><span>PART 02</span><h2>Vibe Research</h2><p>用 AI 辅助文献检索、筛选、归纳、实验实现、结果整理和报告生成，人负责问题定义、证据核验和学术判断。</p></a>
+      </div>
+      <div class="profile-card">
+        <h3>刘洋</h3>
+        <p>四川大学计算机学院</p>
+        <p>研究方向：核领域的人工智能科学计算</p>
+        <div class="profile-links">
+          <a class="profile-link github-link" href="https://mathliuyang.github.io/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.34-3.79-1.34-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1 2.64.75 3.22-.88.1-.73.39-1.23.71-1.51-2.5-.28-5.13-1.25-5.13-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.99 0 0 .95-.3 3.1 1.16.9-.25 1.86-.37 2.82-.38.96 0 1.92.13 2.82.38 2.15-1.46 3.1-1.16 3.1-1.16.61 1.56.23 2.71.11 2.99.72.79 1.16 1.8 1.16 3.03 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.04.76 2.1v3.12c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>GitHub：mathliuyang.github.io</a>
+          <span>公众号：智核学术</span>
+          <span>CSDN：图灵猫</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="screen" id="interaction" data-section>
+  <section class="screen vibe-screen" id="vibe-coding" data-section>
     <div class="wrap">
       <div class="section-head compact-head">
-        <h2 class="title">三种 AI 交互方式</h2>
-        <p class="desc">先分清入口：聊天框负责想清楚，IDE 负责做出来，CLI 负责跑起来。</p>
+        <h2 class="title">Vibe Coding：用自然语言驱动开发</h2>
+        <p class="desc">描述目标，运行验证，给出反馈，迭代成品。</p>
       </div>
-      <div class="interaction-stage">
-        <div class="interaction-art"><img src="assets/svg/interaction-map.svg" alt="聊天框 IDE CLI 三种交互路线"></div>
-        <div class="interaction-grid">
-          <div class="interaction-card chat">
-            <span class="chip blue">CHAT</span>
-            <h3>聊天框</h3>
-            <p class="tools">ChatGPT / Kimi / 豆包 / Gemini / Claude / 秘塔</p>
-            <p>适合读论文、翻译、总结、头脑风暴、写提纲。</p>
-            <b>特点：最快开始，但不能直接进项目干活。</b>
+      <div class="vibe-keywords">
+        <div><b>描述意图</b><span>说清楚要做什么</span></div>
+        <div><b>AI 生成</b><span>先拿到可运行初版</span></div>
+        <div><b>运行反馈</b><span>看页面、看报错、看体验</span></div>
+        <div><b>快速迭代</b><span>用文字和参考图继续改</span></div>
+      </div>
+      <div class="vibe-flow-panel">
+        <p class="flow-caption">闭环关键：运行体验后判断“是否满意”。满意就交付；不满意就反馈修改，回到 AI 生成。</p>
+        <svg class="vibe-flow-svg compact-flow" viewBox="0 0 1180 360" role="img" aria-label="Vibe Coding 闭环工作流">
+          <defs>
+            <marker id="smallArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#16120f"/></marker>
+          </defs>
+          <rect width="1180" height="360" fill="#fff7df"/>
+          <g class="vibe-flow-path">
+            <path d="M200 150 H298" marker-end="url(#smallArrow)"/>
+            <path d="M450 150 H548" marker-end="url(#smallArrow)"/>
+            <path d="M700 150 H790" marker-end="url(#smallArrow)"/>
+            <path d="M918 112 H1016" marker-end="url(#smallArrow)"/>
+            <path d="M918 188 C930 288 360 304 360 206" marker-end="url(#smallArrow)"/>
+          </g>
+          <g class="vibe-node" transform="translate(58 105)"><rect width="142" height="90" fill="#fff"/><text x="71" y="40">提出</text><text x="71" y="66">需求</text></g>
+          <g class="vibe-node" transform="translate(298 105)"><rect width="152" height="90" fill="#dff5ff"/><text x="76" y="40">AI</text><text x="76" y="66">生成</text></g>
+          <g class="vibe-node" transform="translate(548 105)"><rect width="152" height="90" fill="#fff3bf"/><text x="76" y="40">运行</text><text x="76" y="66">体验</text></g>
+          <g class="vibe-diamond" transform="translate(790 78)"><path d="M64 0 L128 72 L64 144 L0 72 Z" fill="#fff"/><text x="64" y="64">是否</text><text x="64" y="92">满意?</text></g>
+          <g class="vibe-node" transform="translate(1016 105)"><rect width="132" height="90" fill="#d8ffd7"/><text x="66" y="40">交付</text><text x="66" y="66">产物</text></g>
+          <g class="vibe-node" transform="translate(286 230)"><rect width="148" height="78" fill="#ffe3ed"/><text x="74" y="35">反馈</text><text x="74" y="60">修改</text></g>
+          <text x="968" y="98" class="flow-label">YES</text>
+          <text x="760" y="292" class="flow-label">NO：继续描述问题</text>
+        </svg>
+      </div>
+      <div class="tomato-case-board">
+        <div class="tomato-case-copy">
+          <span class="chip hot">案例展示</span>
+          <h3>番茄钟网页版小程序</h3>
+          <p>先让 AI 自由发挥做初版，再给参考图要求 1:1 复刻。观众能直接复制提示词，现场演示这套闭环。</p>
+          <div class="tomato-iteration-rail" aria-label="番茄钟二次迭代流程">
+            <span>一句话需求</span>
+            <span>AI 生成初版</span>
+            <span>运行查看</span>
+            <span>给参考图</span>
+            <span>1:1 优化</span>
+            <span>可展示成品</span>
           </div>
-          <div class="interaction-card ide">
-            <span class="chip hot">IDE</span>
-            <h3>编程 IDE</h3>
-            <p class="tools">Trae / Cursor / VS Code + 插件 / Codex App</p>
-            <p>适合读项目、改代码、跑脚本、看报错、反复调试。</p>
-            <b>特点：科研代码和小工具最常用。</b>
+          <div class="tomato-prompt-card">
+            <div class="prompt-head"><span>初始提示词</span><button class="copy" data-copy="tomatoPrompt1">COPY</button></div>
+            <pre id="tomatoPrompt1">请帮我做一个番茄钟网页小程序，包含番茄钟、短休息、长休息三种模式，支持开始、暂停、重置和任务管理。请用单个 HTML 文件实现，界面要简洁好看，可以直接在浏览器打开。</pre>
           </div>
-          <div class="interaction-card cli">
-            <span class="chip red">CLI</span>
-            <h3>命令行工具</h3>
-            <p class="tools">Codex CLI / Claude Code / shell 自动化</p>
-            <p>适合服务器、批处理、远程环境、长时间自动任务。</p>
-            <b>特点：更专业，适合有服务器场景的人。</b>
+          <div class="tomato-prompt-card">
+            <div class="prompt-head"><span>参考图复刻提示词</span><button class="copy" data-copy="tomatoPrompt2">COPY</button></div>
+            <pre id="tomatoPrompt2">这是我喜欢的番茄钟参考图。请参考它的整体风格重新设计一版，尽量做到 1:1：红色背景、半透明圆角面板、顶部三段切换、大号圆形倒计时、开始按钮、重置按钮和任务管理区域都要保留。</pre>
           </div>
         </div>
+        <figure class="tomato-demo-shot">
+          <img src="assets/images/tomato-clock-demo.png" alt="番茄钟网页 demo 截图">
+          <figcaption>参考图驱动的第二轮结果：风格、布局和关键组件对齐。</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="vibe-research" data-section>
+    <div class="wrap">
+      <div class="research-layout">
+        <div class="research-copy">
+          <span class="eyebrow">Vibe Research</span>
+          <h2 class="title">提示词库 × Agent Skills</h2>
+          <p class="desc">同一套科研协作思路，分成两种入口：聊天框快速启动，智能体流程化执行。</p>
+          <div class="research-tags">
+            <span>聊天框模板</span><span>Codex Skills</span><span>自动化科研</span>
+          </div>
+          <div class="research-route-grid">
+            <div class="research-route prompt-route">
+              <b>Prompt Library</b>
+              <span>适合 ChatGPT、Kimi、豆包：读论文、润色、翻译、整理思路。</span>
+            </div>
+            <div class="research-route skill-route">
+              <b>Nature-Skills</b>
+              <span>适合 Codex / Agent：读取规则、执行流程、生成科研产物。</span>
+            </div>
+          </div>
+          <div class="research-scroll-stage prompt-scroll-mini" aria-label="科研协修提示词库滚动展示">
+            <div class="scroll-frame">
+              <div class="scroll-track">
+                <img src="assets/images/vibe-research-prompts.png" alt="AI Core Scholar 学术提示词生成器长图">
+                <img src="assets/images/vibe-research-prompts.png" alt="" aria-hidden="true">
+              </div>
+            </div>
+            <div class="scroll-caption"><a href="https://mathliuyang.github.io/tools/prompt-generator.html" target="_blank" rel="noopener">科研邪修提示词库</a></div>
+          </div>
+          <div class="research-prompt-card">
+            <div>
+              <span>在当下，几乎所有实用的工具，都可以被提炼为标准化的流程，而标准化的流程，恰好就能封装成可复用的技能。</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-workbench" aria-label="Nature-Skills Agent 科研工作台">
+          <div class="bench-head">
+            <span>Agent Workbench</span>
+            <b>Nature-Skills</b>
+          </div>
+          <div class="repo-console">
+            <div>
+              <b>Yuan1z0825/nature-skills</b>
+              <span>约 25.4k stars / 1.5k forks / Apache-2.0</span>
+            </div>
+            <code>git clone ... && scripts/update-codex-skills.sh --pull</code>
+          </div>
+          <div class="skill-grid">
+            <span>nature-figure</span><span>nature-reader</span><span>nature-paper2ppt</span><span>nature-polishing</span><span>nature-literature-pipeline</span><span>nature-paper-to-patent</span>
+          </div>
+          <figure class="nature-shot">
+            <img src="assets/images/nature-skills-gallery.png" alt="Nature-Skills 生成的论文级科研图件拼贴">
+            <figcaption>成果预览：论文级图件、系统图、单细胞图、验证图等科研交付物。</figcaption>
+          </figure>
+          <div class="nature-proof-row">
+            <figure>
+              <img src="assets/images/nature-skills-atlas.png" alt="Nature-Skills 图表类型图谱拼贴">
+              <figcaption>图表图谱：bar、trend、heatmap、scatter 等可复用视觉语法。</figcaption>
+            </figure>
+            <div class="skill-structure">
+              <b>不是普通 prompt collection</b>
+              <p><code>skills/</code> 下每个 <code>nature-*</code> 都是可安装单元，依赖 <code>SKILL.md</code>、<code>manifest.yaml</code>、<code>references/</code>、脚本和资产，让智能体按流程完成科研任务。</p>
+              <a href="https://github.com/Yuan1z0825/nature-skills" target="_blank" rel="noopener">查看 GitHub 项目</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="research-pipeline dual-path">
+        <span>模板路径：选模板</span><span>填入问题</span><span>聊天框协助</span><span>人工核验</span><span>Agent 路径：装 skills</span><span>生成图 / 文 / PPT / 检索结果</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="interaction-modes" data-section>
+    <div class="wrap">
+      <div class="section-head compact-head">
+        <h2 class="title">四种 AI 交互入口</h2>
+        <p class="desc">不是所有 AI 工具都叫 IDE。按入口来分，才能知道该把什么任务交给谁。</p>
+      </div>
+      <div class="interaction-grid">
+        <div class="interaction-card"><h3>1. 聊天框</h3><p>ChatGPT、Kimi、豆包、Gemini。适合问答、读论文、翻译、总结和头脑风暴。</p><div class="demo-card" data-video="assets/videos/chatgpt-demo.mp4" data-title="聊天框：ChatGPT 演示"><video autoplay loop muted playsinline preload="auto" aria-label="ChatGPT 演示视频"><source src="assets/videos/chatgpt-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
+        <div class="interaction-card main"><h3>2. IDE / 编辑器型工具</h3><p>Trae、VSCode、Cursor。适合 Python、C、LaTeX、Markdown、SSH 和工程调试。我现在主力转向 Trae：AI 原生、中文友好、国产模型多、VSCode 配置迁移成本低。</p><div class="demo-card" data-video="assets/videos/trae-demo.mp4" data-title="IDE：Trae 演示"><video autoplay loop muted playsinline preload="auto" aria-label="Trae 演示视频"><source src="assets/videos/trae-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
+        <div class="interaction-card"><h3>3. CLI / 命令行 Agent</h3><p>Codex CLI、Claude Code。适合服务器、批处理、远程环境和无图形界面场景。推荐 Codex CLI；Claude Code 代码强但封号和验证风险高。</p><div class="demo-card" data-video="assets/videos/codex-cli-demo.mp4" data-title="CLI：Codex CLI 演示"><video autoplay loop muted playsinline preload="auto" aria-label="Codex CLI 演示视频"><source src="assets/videos/codex-cli-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
+        <div class="interaction-card agent-card"><h3>4. AI Agent 工作台</h3><p>Codex App、Trae Solo/Work、小龙虾等。适合把完整任务交给 Agent：读项目、拆步骤、执行、生成报告、持续汇报。它不是传统 IDE，而是任务型 Agent 平台。</p><div class="demo-card" data-video="assets/videos/codex-app-demo.mp4" data-title="AI Agent 工作台：Codex App 演示"><video autoplay loop muted playsinline preload="auto" aria-label="Codex App 演示视频"><source src="assets/videos/codex-app-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
       </div>
     </div>
   </section>
@@ -100,55 +235,59 @@
     <div class="wrap">
       <div class="section-head compact-head">
         <h2 class="title">模型怎么选</h2>
-        <p class="desc">先用免费入口建立习惯，重要任务再考虑会员和 Agent 工具。</p>
+        <p class="desc">不要迷信单一模型，用国产和国外模型组合拳覆盖不同场景。</p>
       </div>
-      <div class="model-stage">
-        <div class="model-art"><img src="assets/svg/model-stack.svg" alt="模型选择卡带动画"></div>
-        <div class="model-grid">
-          <div class="model-card recommended">
-            <span class="chip hot">推荐组合</span>
-            <h3>ChatGPT + Kimi + 豆包 + Gemini</h3>
-            <p>聊天框里都能免费开始用，只是会有额度、排队或模型能力限制。</p>
-          </div>
-          <div class="model-card domestic"><h3>Kimi / DeepSeek / 豆包</h3><div class="model-price">免费可用 · 排队/限额</div><p>中文友好，适合日常读论文和材料整理；会员或 API 按需补充。</p></div>
-          <div class="model-card chatgpt"><h3>ChatGPT</h3><div class="model-price">$0 / Plus $20</div><p>免费可用但模型能力一般；重要写作、代码和多模态任务建议开会员。</p></div>
-          <div class="model-card claude"><h3>Claude</h3><div class="model-price">Pro $20 · Max $100+</div><p>能力强，但账号、验证、封号风险和使用门槛高，本场不作为主推荐。</p></div>
-          <div class="model-card gemini"><h3>Gemini</h3><div class="model-price">免费入口 · 优惠看活动</div><p>能力也不错，可作为备用；具体价格以购买页或活动页为准。</p></div>
-          <div class="model-card threshold"><h3>国外门槛</h3><div class="model-price">手机号 / 国际卡 / 网络</div><p>还可能遇到风控验证、人脸验证、账号稳定性问题。</p></div>
+      <div class="model-split-board">
+        <div class="model-column global">
+          <div class="column-head"><span>国外模型</span><b>强能力 / 高门槛</b></div>
+          <div class="model-pill main"><h3>ChatGPT</h3><p>主力日常问答与复杂任务，代码、写作、多模态都很强。</p><em>主力</em></div>
+          <div class="model-pill"><h3>Gemini</h3><p>国外替代模型，多模态和 NotebookLM 搭配好用，但改代码有时太有主见。</p><em>替代</em></div>
+          <div class="model-pill muted"><h3>Claude</h3><p>代码能力很强，但封号、人脸验证和官方使用门槛高，所以不主用。</p><em>不主用</em></div>
+        </div>
+        <div class="model-column domestic">
+          <div class="column-head"><span>国产模型</span><b>中文友好 / 组合使用</b></div>
+          <div class="model-pill main"><h3>Kimi</h3><p>适合复杂问题、长上下文和文献调研，搜索和代码接口比较顺手。</p><em>文献</em></div>
+          <div class="model-pill"><h3>豆包</h3><p>手机端常用，多模态能力强，适合随手处理图片和日常小问题。</p><em>多模态</em></div>
+          <div class="model-pill"><h3>DeepSeek</h3><p>便宜 API 和代码辅助常用，多模态受限，适合接入工具做备用。</p><em>API</em></div>
+          <div class="model-pill muted"><h3>智谱</h3><p>近期很火，但需要抢购，购买体验不够友好。</p><em>观察</em></div>
         </div>
       </div>
-      <p class="source-note">价格和优惠变化很快，页面只做现场决策参考。</p>
+      <div class="combo-strategy">
+        <b>组合拳策略</b>
+        <span>复杂问题用 GPT，长文献用 Kimi，随手多模态用豆包，便宜 API 用 DeepSeek，NotebookLM 可配 Gemini。</span>
+      </div>
+      <div class="screenshot-slot wide-slot">模型订阅价格截图占位</div>
+      <p class="source-note">价格和优惠变化很快，以官网、购买页和现场截图为准。</p>
     </div>
   </section>
 
-  <section class="screen" id="workflow-tools" data-section>
+  <section class="screen" id="recommendation" data-section>
     <div class="wrap">
       <div class="section-head compact-head">
-        <h2 class="title">我推荐哪套工具</h2>
-        <p class="desc">聊天框解决理解，IDE 解决项目，CLI 解决服务器和自动化。</p>
+        <h2 class="title">最终推荐：一套够用的 AI 科研组合</h2>
+        <p class="desc">复杂问题用强模型打底座，日常修改用 IDE 和国产模型省额度，API 作为备用弹药。</p>
       </div>
-      <div class="ide-stage">
-        <div class="ide-art"><img src="assets/svg/ide-choice.svg" alt="Codex App Trae VS Code Codex CLI 工具推荐图"></div>
-        <div class="tool-reco">
-          <div class="reco-main"><span class="chip red">主推荐</span><h3>Codex App + Trae IDE</h3><p>用 Codex 做复杂任务规划和代码协作，用 Trae 作为更友好的 AI 编程 IDE。</p></div>
-          <div class="reco-grid">
-            <div><h4>为什么 Trae</h4><p>字节基于 AI 底座构建，对中文用户更友好，适合编辑项目。</p></div>
-            <div><h4>VS Code 用户</h4><p>可以平滑迁移到 Trae；插件生态和操作习惯大体相近。</p></div>
-            <div><h4>注意事项</h4><p>少见插件和高阶操作可能没完全适配，VS Code 可作为备选。</p></div>
-            <div><h4>实际覆盖</h4><p>Python、Markdown、LaTeX、SSH 远程连接服务器都能覆盖。</p></div>
-          </div>
-          <div class="server-note">有服务器或批处理场景：补充使用 <b>Codex CLI</b>。</div>
-        </div>
+      <div class="recommend-ladder">
+        <div class="ladder-step"><span>01</span><h3>主力底座</h3><p>ChatGPT Plus + Codex：复杂问题、新项目底座、强推理任务。</p></div>
+        <div class="ladder-step"><span>02</span><h3>日常执行</h3><p>Trae IDE：科研代码、LaTeX、Markdown、SSH、小修改和日常调试。</p></div>
+        <div class="ladder-step"><span>03</span><h3>复杂任务托管</h3><p>Codex App / Agent 工作台：把完整任务交给 Agent 规划、执行和汇报。</p></div>
+        <div class="ladder-step"><span>04</span><h3>省额度备用</h3><p>硅基流动 API 接入 Trae：Kimi、DeepSeek、豆包等按量使用。</p></div>
       </div>
-      <div class="capability-row">
-        <div><b>聊天框</b><span>上下文靠粘贴，适合问答和材料理解。</span></div>
-        <div><b>IDE</b><span>能读文件、改项目、运行验证，适合科研代码。</span></div>
-        <div><b>CLI</b><span>能在命令行和服务器里跑自动化任务。</span></div>
+      <div class="budget-strip">
+        <div><b>ChatGPT Plus</b><strong>约 144 元/月</strong><span>$20/月，按 1 USD ≈ 7.2 RMB 估算</span></div>
+        <div class="plus-sign">+</div>
+        <div><b>第三方 API</b><strong>约 20 元/月</strong><span>硅基流动按量充值，作为备用额度</span></div>
+        <div class="equals-sign">=</div>
+        <div><b>推荐月预算</b><strong>约 164 元/月</strong><span>不含网络和一次性手机号成本</span></div>
       </div>
-    </div>
-  </section>
-        </div>
+      <div class="prereq-list">
+        <div><b>网络环境</b><span>需要稳定科学上网；约 30 元可用一两年，具体现场私下交流。</span></div>
+        <div><b>订阅方式</b><span>建议 Google 邮箱 + Google Play 官方订阅，尽量不要闲鱼直充。</span></div>
+        <div><b>手机号</b><span>giffgaff eSIM 预充约 10 英镑≈90 元，小白卡约 20 元，一次性约 110 元。</span></div>
+        <div><b>长期保号</b><span>每半年发短信约 3 元，年化约 6 元，可长期保留。</span></div>
       </div>
+      <div class="screenshot-slot wide-slot">Trae / Codex / API 订阅价格截图占位</div>
+      <p class="source-note">资料来源：OpenAI ChatGPT/Codex 定价、Google AI Pro、Claude pricing、Cursor pricing、Trae pricing、SiliconFlow pricing、OpenAI/Gemini Deep Research、IBM Vibe Coding；价格以 2026-07-02 公开页面和现场截图为准。</p>
     </div>
   </section>
 
@@ -260,24 +399,36 @@
 
   <section class="screen" id="level5" data-section>
     <div class="wrap level-card">
-      <div class="level-art"><img src="assets/svg/web-factory.svg" alt="网页小工具工厂动画"></div>
+      <div class="level-art"><img src="assets/svg/web-factory.svg" alt="论文复现报告工厂动画"></div>
       <div class="level-content">
-        <div class="level-top"><span class="level-no">LEVEL 05</span><span class="chip hot">网页 / 小工具</span></div>
-        <span class="pain">痛点：想法很多，但做成可演示项目很慢</span>
-        <h2 class="level-title">科研想法 → 离线可用 Demo</h2>
+        <div class="level-top"><span class="level-no">LEVEL 05</span><span class="chip hot">Vibe Coding + Vibe Research</span></div>
+        <span class="pain">痛点：论文算例难复现、图表对比和报告整理耗时</span>
+        <h2 class="level-title">Vibe Coding + Vibe Research：从论文到复现报告</h2>
         <div class="flow">
-          <div class="step"><b>输入</b><span>主题、流程、数据</span></div>
-          <div class="step"><b>Agent 动作</b><span>生成 HTML/CSS/JS</span></div>
-          <div class="step"><b>输出</b><span>可打开小工具</span></div>
-          <div class="step"><b>核验</b><span>内容准确、路径可用</span></div>
+          <div class="step"><b>读论文 PDF</b><span>定位算例、公式、误差定义</span></div>
+          <div class="step"><b>Python 复现</b><span>实现 GBDF2-IMEX 与 DST 求解</span></div>
+          <div class="step"><b>图表对比</b><span>生成时间/空间误差曲线</span></div>
+          <div class="step"><b>中文报告</b><span>嵌入原文截图与复现结果</span></div>
         </div>
-        <details class="details">
-          <summary>展开提示词与 Demo 入口</summary>
+        <div class="video-demo" aria-label="录屏视频占位窗口">
+          <div class="video-demo-head"><span>现场录屏窗口</span><span>剪辑后替换视频源</span></div>
+          <div class="video-demo-window">
+            <video controls preload="metadata" aria-label="Vibe Coding 和 Vibe Research 复现流程录屏">
+              剪辑后将视频放到 assets/videos/fkpp_reproduction_demo.mp4，并在这里加入 source 标签。
+            </video>
+            <div class="video-placeholder">
+              <b>VIDEO PLACEHOLDER</b>
+              <span>这里预留播放窗口：放入剪辑后的视频即可展示“论文 → 代码 → 图表 → 报告”的完整流程。</span>
+            </div>
+          </div>
+        </div>
+        <details class="details" open>
+          <summary>展开提示词、报告入口与视频替换说明</summary>
           <div class="detail-grid">
-            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p5">COPY</button></div><pre id="p5">请把这个科研想法做成一个离线 HTML demo。
+            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p5">COPY</button></div><pre id="p5">请用 Python 复现这篇论文中的算例 1，直到误差指标和原文保持一致。
 
-要求：纯 HTML/CSS/JS，无后端、无 CDN；首页直接展示可交互工具；页面适合现场展示；所有文件使用相对路径。</pre></div>
-            <div class="verify"><h4>可迁移场景</h4><ul><li>组会汇报页</li><li>数据展示页</li><li>参数探索小工具</li></ul><div class="path">case_pack/05_report_tool/index.html</div></div>
+要求：读取论文 PDF，定位算例设置；实现 GBDF2-IMEX 数值格式；输出时间和空间误差图；制作中文 HTML 对比报告，包含原文截图、复现图和关键误差表。</pre></div>
+            <div class="verify"><h4>本案例产物</h4><ul><li>复现代码：reproduce_gbdf2_fkpp/src/gbdf2_example1.py</li><li>对比报告：reproduce_gbdf2_fkpp/report.html</li><li>视频占位：assets/videos/fkpp_reproduction_demo.mp4</li></ul><div class="path">../reproduce_gbdf2_fkpp/report.html</div><a class="btn blue" href="../reproduce_gbdf2_fkpp/report.html">打开对比报告</a></div>
           </div>
         </details>
       </div>
@@ -321,6 +472,16 @@
     </div>
   </section>
 </main>
+
+<div class="video-lightbox" data-video-lightbox aria-hidden="true">
+  <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+    <div class="lightbox-head">
+      <span id="lightboxTitle">演示预览</span>
+      <button class="lightbox-close" type="button" aria-label="关闭预览">CLOSE</button>
+    </div>
+    <video controls playsinline preload="metadata"></video>
+  </div>
+</div>
 
 <footer class="footer"><div class="wrap">AI+科研 Agent Quest · 离线单页展示 · 素材包随站点交付</div></footer>
 <script src="assets/js/showcase.js"></script>

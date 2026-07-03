@@ -22,7 +22,9 @@
     sections[next].scrollIntoView({behavior:"smooth",block:"start"});
   }
   document.addEventListener("keydown",(e)=>{
-    if(["INPUT","TEXTAREA"].includes(document.activeElement.tagName)) return;
+    const active=document.activeElement;
+    const previewOpen=document.querySelector("[data-video-lightbox].open");
+    if(previewOpen || ["INPUT","TEXTAREA","VIDEO"].includes(active.tagName)) return;
     if(e.key==="ArrowDown"||e.key==="ArrowRight"){e.preventDefault();go(1);}
     if(e.key==="ArrowUp"||e.key==="ArrowLeft"){e.preventDefault();go(-1);}
     if(e.key==="Home"){e.preventDefault();sections[0].scrollIntoView({behavior:"smooth"});}
@@ -46,5 +48,47 @@
         btn.textContent="SELECT TEXT";
       }
     });
+  });
+
+  const lightbox=document.querySelector("[data-video-lightbox]");
+  const lightboxVideo=lightbox ? lightbox.querySelector("video") : null;
+  const lightboxTitle=lightbox ? lightbox.querySelector("#lightboxTitle") : null;
+  const closeBtn=lightbox ? lightbox.querySelector(".lightbox-close") : null;
+  function playDemoLoops(){
+    document.querySelectorAll(".demo-card video").forEach(video=>{
+      video.play().catch(()=>{});
+    });
+  }
+  function closePreview(){
+    if(!lightbox || !lightboxVideo) return;
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden","true");
+    lightboxVideo.pause();
+    lightboxVideo.removeAttribute("src");
+    lightboxVideo.load();
+    playDemoLoops();
+  }
+  playDemoLoops();
+  document.querySelectorAll(".demo-card").forEach(card=>{
+    card.addEventListener("click",(e)=>{
+      if(!lightbox || !lightboxVideo) return;
+      e.preventDefault();
+      document.querySelectorAll(".demo-card video").forEach(video=>video.pause());
+      lightboxVideo.src=card.dataset.video;
+      if(lightboxTitle) lightboxTitle.textContent=card.dataset.title || "演示预览";
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden","false");
+      lightboxVideo.focus();
+      lightboxVideo.play().catch(()=>{});
+    });
+  });
+  if(closeBtn) closeBtn.addEventListener("click",closePreview);
+  if(lightbox){
+    lightbox.addEventListener("click",(e)=>{
+      if(e.target===lightbox) closePreview();
+    });
+  }
+  document.addEventListener("keydown",(e)=>{
+    if(e.key==="Escape" && lightbox && lightbox.classList.contains("open")) closePreview();
   });
 })();

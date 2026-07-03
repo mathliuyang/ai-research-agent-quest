@@ -29,3 +29,7 @@ env/
 *.zip
 *.7z
 *.rar
+
+# Large local demo recordings
+assets/videos/
+*.mp4
