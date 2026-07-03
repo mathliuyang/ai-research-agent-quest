@@ -29,7 +29,7 @@
     if(e.key==="ArrowUp"||e.key==="ArrowLeft"){e.preventDefault();go(-1);}
     if(e.key==="Home"){e.preventDefault();sections[0].scrollIntoView({behavior:"smooth"});}
     if(e.key==="End"){e.preventDefault();sections[sections.length-1].scrollIntoView({behavior:"smooth"});}
-    if(/^[1-5]$/.test(e.key)){
+    if(/^[1-3]$/.test(e.key)){
       const target=document.querySelector("#level"+e.key);
       if(target){e.preventDefault();target.scrollIntoView({behavior:"smooth"});}
     }

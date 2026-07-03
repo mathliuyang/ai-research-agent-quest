@@ -13,7 +13,7 @@
     <div class="status">
       <span class="chip hot">单页闯关</span>
       <span class="chip">↑↓ 切换</span>
-      <span class="chip">1-5 跳关</span>
+      <span class="chip">1-3 跳关</span>
       <span class="chip red">离线可用</span>
     </div>
   </div>
@@ -26,12 +26,9 @@
   <a href="#vibe-research">Research</a>
   <a href="#interaction-modes">入口</a>
   <a href="#models">模型</a>
-  <a href="#recommendation">推荐</a>
   <a href="#level1">01</a>
   <a href="#level2">02</a>
   <a href="#level3">03</a>
-  <a href="#level4">04</a>
-  <a href="#level5">05</a>
   <a href="#tools">T</a>
   <a href="#final">END</a>
 </nav>
@@ -45,7 +42,7 @@
         <p class="subtitle">今天围绕两条主线展开：<b>Vibe Coding</b> 和 <b>Vibe Research</b>。核心不是“让 AI 替我做科研”，而是用 AI 重组科研工作流。</p>
         <div class="hero-actions">
           <a class="btn red" href="#vibe-coding">START</a>
-          <a class="btn blue" href="#recommendation">看工具推荐</a>
+          <a class="btn blue" href="#models">看模型组合</a>
           <a class="btn white" href="#level1">进入案例</a>
         </div>
       </div>
@@ -223,10 +220,10 @@
         <p class="desc">不是所有 AI 工具都叫 IDE。按入口来分，才能知道该把什么任务交给谁。</p>
       </div>
       <div class="interaction-grid">
-        <div class="interaction-card"><h3>1. 聊天框</h3><p>ChatGPT、Kimi、豆包、Gemini。适合问答、读论文、翻译、总结和头脑风暴。</p><div class="demo-card" data-video="assets/videos/chatgpt-demo.mp4" data-title="聊天框：ChatGPT 演示"><video autoplay loop muted playsinline preload="auto" aria-label="ChatGPT 演示视频"><source src="assets/videos/chatgpt-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
-        <div class="interaction-card main"><h3>2. IDE / 编辑器型工具</h3><p>Trae、VSCode、Cursor。适合 Python、C、LaTeX、Markdown、SSH 和工程调试。我现在主力转向 Trae：AI 原生、中文友好、国产模型多、VSCode 配置迁移成本低。</p><div class="demo-card" data-video="assets/videos/trae-demo.mp4" data-title="IDE：Trae 演示"><video autoplay loop muted playsinline preload="auto" aria-label="Trae 演示视频"><source src="assets/videos/trae-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
-        <div class="interaction-card"><h3>3. CLI / 命令行 Agent</h3><p>Codex CLI、Claude Code。适合服务器、批处理、远程环境和无图形界面场景。推荐 Codex CLI；Claude Code 代码强但封号和验证风险高。</p><div class="demo-card" data-video="assets/videos/codex-cli-demo.mp4" data-title="CLI：Codex CLI 演示"><video autoplay loop muted playsinline preload="auto" aria-label="Codex CLI 演示视频"><source src="assets/videos/codex-cli-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
-        <div class="interaction-card agent-card"><h3>4. AI Agent 工作台</h3><p>Codex App、Trae Solo/Work、小龙虾等。适合把完整任务交给 Agent：读项目、拆步骤、执行、生成报告、持续汇报。它不是传统 IDE，而是任务型 Agent 平台。</p><div class="demo-card" data-video="assets/videos/codex-app-demo.mp4" data-title="AI Agent 工作台：Codex App 演示"><video autoplay loop muted playsinline preload="auto" aria-label="Codex App 演示视频"><source src="assets/videos/codex-app-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
+        <div class="interaction-card"><div class="card-title-row"><h3>1. 聊天框</h3><span class="mode-tag">常用</span></div><p>ChatGPT、Kimi、豆包、Gemini。适合问答、读论文、翻译、总结和头脑风暴。</p><div class="demo-card" data-video="assets/videos/chatgpt-demo.mp4" data-title="聊天框：ChatGPT 演示"><video autoplay loop muted playsinline preload="auto" aria-label="ChatGPT 演示视频"><source src="assets/videos/chatgpt-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
+        <div class="interaction-card agent-card"><div class="card-title-row"><h3>2. AI Agent 工作台</h3><span class="mode-tag entry">入门</span></div><p>Codex App、Trae Solo/Work、小龙虾等。适合把完整任务交给 Agent：读项目、拆步骤、执行、生成报告、持续汇报。它不是传统 IDE，而是任务型 Agent 平台。</p><div class="demo-card" data-video="assets/videos/codex-app-demo.mp4" data-title="AI Agent 工作台：Codex App 演示"><video autoplay loop muted playsinline preload="auto" aria-label="Codex App 演示视频"><source src="assets/videos/codex-app-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
+        <div class="interaction-card main"><div class="card-title-row"><h3>3. IDE / 编辑器型工具</h3><span class="mode-tag advanced">进阶</span></div><p>Trae、VSCode、Cursor。适合 Python、C、LaTeX、Markdown、SSH 和工程调试。我现在主力转向 Trae：AI 原生、中文友好、国产模型多、VSCode 配置迁移成本低。</p><div class="demo-card" data-video="assets/videos/trae-demo.mp4" data-title="IDE：Trae 演示"><video autoplay loop muted playsinline preload="auto" aria-label="Trae 演示视频"><source src="assets/videos/trae-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
+        <div class="interaction-card"><div class="card-title-row"><h3>4. CLI / 命令行 Agent</h3><span class="mode-tag hardcore">硬核</span></div><p>Codex CLI、Claude Code。适合服务器、批处理、远程环境和无图形界面场景。推荐 Codex CLI；Claude Code 代码强但封号和验证风险高。</p><div class="demo-card" data-video="assets/videos/codex-cli-demo.mp4" data-title="CLI：Codex CLI 演示"><video autoplay loop muted playsinline preload="auto" aria-label="Codex CLI 演示视频"><source src="assets/videos/codex-cli-demo.mp4" type="video/mp4"></video><button class="demo-play" type="button">大屏预览</button></div></div>
       </div>
     </div>
   </section>
@@ -234,96 +231,109 @@
   <section class="screen" id="models" data-section>
     <div class="wrap">
       <div class="section-head compact-head">
-        <h2 class="title">模型怎么选</h2>
-        <p class="desc">不要迷信单一模型，用国产和国外模型组合拳覆盖不同场景。</p>
+        <h2 class="title">模型怎么选：国外 × 国内</h2>
+        <p class="desc">不要迷信单一模型，把强推理、长上下文、多模态和便宜 API 分开选。</p>
       </div>
       <div class="model-split-board">
         <div class="model-column global">
           <div class="column-head"><span>国外模型</span><b>强能力 / 高门槛</b></div>
-          <div class="model-pill main"><h3>ChatGPT</h3><p>主力日常问答与复杂任务，代码、写作、多模态都很强。</p><em>主力</em></div>
-          <div class="model-pill"><h3>Gemini</h3><p>国外替代模型，多模态和 NotebookLM 搭配好用，但改代码有时太有主见。</p><em>替代</em></div>
-          <div class="model-pill muted"><h3>Claude</h3><p>代码能力很强，但封号、人脸验证和官方使用门槛高，所以不主用。</p><em>不主用</em></div>
+          <div class="model-card-grid global-grid">
+            <article class="model-logo-card pick">
+              <img src="assets/logos/chatgpt.png" alt="ChatGPT logo">
+              <div><h3>ChatGPT</h3><p>复杂问题、新项目底座、代码和写作主力。</p></div>
+              <span>主力</span>
+              <details><summary>门槛 / 费用</summary><p>Go 约 8 美元/月起；Plus 约 20 美元/月。国内使用仍主要卡在网络和支付路径。</p></details>
+            </article>
+            <article class="model-logo-card">
+              <img src="assets/logos/gemini.png" alt="Gemini logo">
+              <div><h3>Gemini</h3><p>多模态和 NotebookLM 搭配好用，适合资料阅读。</p></div>
+              <span>备用</span>
+              <details><summary>门槛 / 费用</summary><p>Google AI Plus 约 4.99 美元/月起；AI Pro 约 19.99 美元/月，地区价格会变。</p></details>
+            </article>
+            <article class="model-logo-card soft">
+              <img src="assets/logos/claude.png" alt="Claude logo">
+              <div><h3>Claude</h3><p>代码能力强，但账号、验证和使用门槛偏高。</p></div>
+              <span>观察</span>
+              <details><summary>门槛 / 费用</summary><p>Claude Pro 约 20 美元/月；账号、地区、支付和验证门槛偏高，所以不作为主用。</p></details>
+            </article>
+          </div>
         </div>
         <div class="model-column domestic">
           <div class="column-head"><span>国产模型</span><b>中文友好 / 组合使用</b></div>
-          <div class="model-pill main"><h3>Kimi</h3><p>适合复杂问题、长上下文和文献调研，搜索和代码接口比较顺手。</p><em>文献</em></div>
-          <div class="model-pill"><h3>豆包</h3><p>手机端常用，多模态能力强，适合随手处理图片和日常小问题。</p><em>多模态</em></div>
-          <div class="model-pill"><h3>DeepSeek</h3><p>便宜 API 和代码辅助常用，多模态受限，适合接入工具做备用。</p><em>API</em></div>
-          <div class="model-pill muted"><h3>智谱</h3><p>近期很火，但需要抢购，购买体验不够友好。</p><em>观察</em></div>
+          <div class="model-card-grid domestic-grid">
+            <article class="model-logo-card pick">
+              <img src="assets/logos/kimi.png" alt="Kimi logo">
+              <div><h3>Kimi</h3><p>长上下文、文献调研和复杂中文问题很顺手。</p></div>
+              <span>文献</span>
+              <details><summary>门槛 / 费用</summary><p>免费档可用；付费会员 Andante 约 49 元/月起，高频 Agent / Code 再看更高档。</p></details>
+            </article>
+            <article class="model-logo-card pick">
+              <img src="assets/logos/doubao.png" alt="豆包 logo">
+              <div><h3>豆包</h3><p>手机端常用，多模态和日常小问题处理方便。</p></div>
+              <span>多模态</span>
+              <details><summary>门槛 / 费用</summary><p>基础版免费；专业版标准套餐约 68 元/月起，主要面向复杂办公和生产力任务。</p></details>
+            </article>
+            <article class="model-logo-card pick">
+              <img src="assets/logos/deepseek.png" alt="DeepSeek logo">
+              <div><h3>DeepSeek</h3><p>推理和代码辅助常用，适合作为便宜 API 备用。</p></div>
+              <span>API</span>
+              <details><summary>门槛 / 费用</summary><p>聊天端免费；官方 API 按量计费，V4 Flash 约 0.14 美元/百万输入、0.28 美元/百万输出 tokens。</p></details>
+            </article>
+            <article class="model-logo-card">
+              <img src="assets/logos/qwen.png" alt="通义千问 logo">
+              <div><h3>通义千问</h3><p>阿里系模型，中文、代码和开源生态覆盖面广。</p></div>
+              <span>生态</span>
+              <details><summary>门槛 / 费用</summary><p>千问 App 可免费用；阿里云百炼按量或资源包计费，Qwen-Plus 资源包可见约 11.66 元/3 月起。</p></details>
+            </article>
+            <article class="model-logo-card">
+              <img src="assets/logos/ernie.png" alt="文心一言 logo">
+              <div><h3>文心一言</h3><p>百度系入口，搜索、办公和中文内容场景覆盖多。</p></div>
+              <span>搜索</span>
+              <details><summary>门槛 / 费用</summary><p>现已全面免费；历史专业版曾为连续包月约 49.9 元/月、单月 59.9 元。</p></details>
+            </article>
+            <article class="model-logo-card">
+              <img src="assets/logos/yuanbao.png" alt="腾讯元宝 logo">
+              <div><h3>腾讯元宝</h3><p>微信生态友好，适合日常问答和资料整理。</p></div>
+              <span>微信</span>
+              <details><summary>门槛 / 费用</summary><p>目前以免费使用为主；未查到稳定公开 C 端月订阅价，实际以 App 内购买页为准。</p></details>
+            </article>
+            <article class="model-logo-card soft">
+              <img src="assets/logos/zhipu.png" alt="智谱清言 logo">
+              <div><h3>智谱清言</h3><p>GLM 系模型，适合观察国产模型能力边界。</p></div>
+              <span>观察</span>
+              <details><summary>门槛 / 费用</summary><p>App Store 显示连续包月约 19 元/月起；另有月卡、积分包和 SVIP 档。</p></details>
+            </article>
+            <article class="model-logo-card">
+              <img src="assets/logos/spark.png" alt="讯飞星火 logo">
+              <div><h3>讯飞星火</h3><p>语音、教育和办公场景积累多，适合中文材料处理。</p></div>
+              <span>办公</span>
+              <details><summary>门槛 / 费用</summary><p>App Store 显示求职 AI 助手连续包月约 15 元/月；通用会员和 API 另看官方页面。</p></details>
+            </article>
+          </div>
         </div>
       </div>
-      <div class="combo-strategy">
-        <b>组合拳策略</b>
-        <span>复杂问题用 GPT，长文献用 Kimi，随手多模态用豆包，便宜 API 用 DeepSeek，NotebookLM 可配 Gemini。</span>
+      <div class="model-recommend-row" aria-label="最终推荐模型组合">
+        <div class="recommend-copy">
+          <b>最终推荐模型组合</b>
+          <span>复杂问题用 GPT，长文献用 Kimi，随手多模态用豆包，便宜 API 用 DeepSeek，NotebookLM 可配 Gemini。</span>
+        </div>
+        <div class="recommend-chip-row">
+          <span><img src="assets/logos/chatgpt.png" alt="">ChatGPT</span>
+          <span><img src="assets/logos/kimi.png" alt="">Kimi</span>
+          <span><img src="assets/logos/doubao.png" alt="">豆包</span>
+          <span><img src="assets/logos/deepseek.png" alt="">DeepSeek</span>
+          <span><img src="assets/logos/gemini.png" alt="">Gemini</span>
+        </div>
       </div>
-      <div class="screenshot-slot wide-slot">模型订阅价格截图占位</div>
-      <p class="source-note">价格和优惠变化很快，以官网、购买页和现场截图为准。</p>
-    </div>
-  </section>
-
-  <section class="screen" id="recommendation" data-section>
-    <div class="wrap">
-      <div class="section-head compact-head">
-        <h2 class="title">最终推荐：一套够用的 AI 科研组合</h2>
-        <p class="desc">复杂问题用强模型打底座，日常修改用 IDE 和国产模型省额度，API 作为备用弹药。</p>
-      </div>
-      <div class="recommend-ladder">
-        <div class="ladder-step"><span>01</span><h3>主力底座</h3><p>ChatGPT Plus + Codex：复杂问题、新项目底座、强推理任务。</p></div>
-        <div class="ladder-step"><span>02</span><h3>日常执行</h3><p>Trae IDE：科研代码、LaTeX、Markdown、SSH、小修改和日常调试。</p></div>
-        <div class="ladder-step"><span>03</span><h3>复杂任务托管</h3><p>Codex App / Agent 工作台：把完整任务交给 Agent 规划、执行和汇报。</p></div>
-        <div class="ladder-step"><span>04</span><h3>省额度备用</h3><p>硅基流动 API 接入 Trae：Kimi、DeepSeek、豆包等按量使用。</p></div>
-      </div>
-      <div class="budget-strip">
-        <div><b>ChatGPT Plus</b><strong>约 144 元/月</strong><span>$20/月，按 1 USD ≈ 7.2 RMB 估算</span></div>
-        <div class="plus-sign">+</div>
-        <div><b>第三方 API</b><strong>约 20 元/月</strong><span>硅基流动按量充值，作为备用额度</span></div>
-        <div class="equals-sign">=</div>
-        <div><b>推荐月预算</b><strong>约 164 元/月</strong><span>不含网络和一次性手机号成本</span></div>
-      </div>
-      <div class="prereq-list">
-        <div><b>网络环境</b><span>需要稳定科学上网；约 30 元可用一两年，具体现场私下交流。</span></div>
-        <div><b>订阅方式</b><span>建议 Google 邮箱 + Google Play 官方订阅，尽量不要闲鱼直充。</span></div>
-        <div><b>手机号</b><span>giffgaff eSIM 预充约 10 英镑≈90 元，小白卡约 20 元，一次性约 110 元。</span></div>
-        <div><b>长期保号</b><span>每半年发短信约 3 元，年化约 6 元，可长期保留。</span></div>
-      </div>
-      <div class="screenshot-slot wide-slot">Trae / Codex / API 订阅价格截图占位</div>
-      <p class="source-note">资料来源：OpenAI ChatGPT/Codex 定价、Google AI Pro、Claude pricing、Cursor pricing、Trae pricing、SiliconFlow pricing、OpenAI/Gemini Deep Research、IBM Vibe Coding；价格以 2026-07-02 公开页面和现场截图为准。</p>
+      <p class="source-note">价格、额度和入口变化很快；以上按 2026-07-03 公开官网、App Store 或购买页可见的最低档整理。</p>
     </div>
   </section>
 
   <section class="screen" id="level1" data-section>
     <div class="wrap level-card">
-      <div class="level-art"><img src="assets/svg/agent-battle.svg" alt="代码调试机器人动画"></div>
-      <div class="level-content">
-        <div class="level-top"><span class="level-no">LEVEL 01</span><span class="chip blue">代码修改与自动调试</span></div>
-        <span class="pain">痛点：报错来回复制，项目上下文丢失</span>
-        <h2 class="level-title">从“贴报错”到“进项目修”</h2>
-        <div class="flow">
-          <div class="step"><b>输入</b><span>Python 项目 + CSV + 报错</span></div>
-          <div class="step"><b>Agent 动作</b><span>读目录、找入口、改脚本</span></div>
-          <div class="step"><b>输出</b><span>summary.csv + trend.txt</span></div>
-          <div class="step"><b>核验</b><span>公式、字段、结果可复现</span></div>
-        </div>
-        <details class="details">
-          <summary>展开提示词与素材入口</summary>
-          <div class="detail-grid">
-            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p1">COPY</button></div><pre id="p1">请先阅读当前 Python 项目，不要立刻修改。
-
-目标：修复实验数据汇总脚本，让它能读取 data/experiment_log.csv，输出 results/summary.csv 和 results/trend.txt。
-
-请先告诉我项目结构、入口文件、当前 bug、最小修改方案和运行验证命令。确认后再改文件。</pre></div>
-            <div class="verify"><h4>人工核验点</h4><ul><li>loss/time_s 是否按数值处理</li><li>results 目录是否自动创建</li><li>输出是否和 expected 对得上</li></ul><div class="path">case_pack/01_code_debug</div></div>
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="screen" id="level2" data-section>
-    <div class="wrap level-card">
       <div class="level-art"><img src="assets/svg/pdf-belt.svg" alt="PDF 传送带动画"></div>
       <div class="level-content">
-        <div class="level-top"><span class="level-no">LEVEL 02</span><span class="chip hot">真实专利材料</span></div>
+        <div class="level-top"><span class="level-no">LEVEL 01</span><span class="chip hot">原 LEVEL 02 · 真实专利材料</span></div>
         <span class="pain">痛点：一批专利 PDF 手工录字段慢且容易错</span>
         <h2 class="level-title">36 个 PDF → 成果统计表</h2>
         <div class="flow">
@@ -335,7 +345,7 @@
         <details class="details" open>
           <summary>展开提示词与真实结果</summary>
           <div class="detail-grid">
-            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p2">COPY</button></div><pre id="p2">请基于 sample_pdfs 中的专利 PDF 和现有脚本，完成一次可复现的专利整理演示。
+            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p1">COPY</button></div><pre id="p1">请基于 sample_pdfs 中的专利 PDF 和现有脚本，完成一次可复现的专利整理演示。
 
 要求：说明字段、运行样本、输出 CSV/TXT、标出人工核验字段，不编造 PDF 中不存在的信息。</pre></div>
             <div class="verify"><h4>真实结果摘要</h4><ul><li>完整材料：36 个 PDF</li><li>已授权：23 项</li><li>已申请：13 项</li><li>交付包含 3 个样本 PDF</li></ul><div class="path">case_pack/02_patent_pdf</div></div>
@@ -345,63 +355,39 @@
     </div>
   </section>
 
+  <section class="screen" id="level2" data-section>
+    <div class="wrap level-card">
+      <div class="level-art"><img src="assets/svg/nature-skill-loop.svg" alt="Nature skills 科研图文工作流动画"></div>
+      <div class="level-content">
+        <div class="level-top"><span class="level-no">LEVEL 02</span><span class="chip blue">Nature Skills 实战演示</span></div>
+        <span class="pain">痛点：数据、绘图、结果描述和英文润色常被拆成四个低效环节</span>
+        <h2 class="level-title">模拟数据 → 科研绘图 → 中文描述 → 学术英语</h2>
+        <div class="flow">
+          <div class="step"><b>造数据</b><span>生成模拟实验数据并保存 CSV</span></div>
+          <div class="step"><b>画图</b><span>用 nature-figure 完成科研绘图</span></div>
+          <div class="step"><b>写结果</b><span>生成一段中文结果描述</span></div>
+          <div class="step"><b>润色</b><span>用 nature-polishing 改成学术英语</span></div>
+        </div>
+        <details class="details" open>
+          <summary>展开三步提示词与润色入口</summary>
+          <div class="detail-grid">
+            <div class="prompt"><div class="prompt-head"><span>PROMPT 1</span><button class="copy" data-copy="p2a">COPY</button></div><pre id="p2a">帮我生成一个模拟数据存到 csv 文件中，我需要对其进行科研绘图。</pre></div>
+            <div class="prompt"><div class="prompt-head"><span>PROMPT 2</span><button class="copy" data-copy="p2b">COPY</button></div><pre id="p2b">请帮我用 nature-figure 来完成上述数据的科研绘图。</pre></div>
+            <div class="prompt"><div class="prompt-head"><span>PROMPT 3</span><button class="copy" data-copy="p2c">COPY</button></div><pre id="p2c">帮我生成一段对这个结果的中文描述。
+
+接下来利用 nature-polishing 对上述的结果描述进行学术英语写作。</pre></div>
+            <div class="verify"><h4>现场展示节奏</h4><ul><li>第一步展示 CSV 文件真实生成</li><li>第二步展示 nature-figure 的绘图规范和输出图</li><li>第三步先写中文结果，再交给 nature-polishing 变成论文表达</li><li>强调 Skills 不是单句提示词，而是可复用的科研流程</li></ul><div class="path">skills/nature-figure + skills/nature-polishing</div><a class="btn blue" href="https://github.com/Yuan1z0825/nature-skills/blob/main/skills/nature-polishing/README.md" target="_blank" rel="noopener">nature-polishing</a></div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <section class="screen" id="level3" data-section>
-    <div class="wrap level-card">
-      <div class="level-art"><img src="assets/svg/latex-lock.svg" alt="LaTeX 结构锁动画"></div>
-      <div class="level-content">
-        <div class="level-top"><span class="level-no">LEVEL 03</span><span class="chip">LaTeX 论文翻译</span></div>
-        <span class="pain">痛点：翻译会把公式、引用和标签弄乱</span>
-        <h2 class="level-title">翻译文字，锁住结构</h2>
-        <div class="flow">
-          <div class="step"><b>输入</b><span>中文 tex + 术语表</span></div>
-          <div class="step"><b>Agent 动作</b><span>分段翻译，保护命令</span></div>
-          <div class="step"><b>输出</b><span>英文 tex + 检查清单</span></div>
-          <div class="step"><b>核验</b><span>术语、公式、引用未丢</span></div>
-        </div>
-        <details class="details">
-          <summary>展开提示词与结构保护对象</summary>
-          <div class="detail-grid">
-            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p3">COPY</button></div><pre id="p3">请把 draft_cn.tex 翻译为英文学术论文表达。
-
-硬性约束：不修改任何 LaTeX 命令、label、ref、cite、公式和图表环境；只翻译自然语言；统一 glossary.md 中的术语。</pre></div>
-            <div class="verify"><h4>结构保护</h4><ul><li>equation / label / ref</li><li>cite / figure / table</li><li>bibliography 和术语表</li></ul><div class="path">case_pack/03_latex_translation</div></div>
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="screen" id="level4" data-section>
-    <div class="wrap level-card">
-      <div class="level-art"><img src="assets/svg/plot-scan.svg" alt="论文图曲线扫描动画"></div>
-      <div class="level-content">
-        <div class="level-top"><span class="level-no">LEVEL 04</span><span class="chip blue">论文图复现</span></div>
-        <span class="pain">痛点：数据有了，但图不像论文图</span>
-        <h2 class="level-title">把“好看”拆成绘图参数</h2>
-        <div class="flow">
-          <div class="step"><b>输入</b><span>参考风格 + CSV</span></div>
-          <div class="step"><b>Agent 动作</b><span>分析配色、线型、字体</span></div>
-          <div class="step"><b>输出</b><span>PNG + PDF + 脚本</span></div>
-          <div class="step"><b>核验</b><span>坐标、单位、图例</span></div>
-        </div>
-        <details class="details">
-          <summary>展开提示词与图件输出</summary>
-          <div class="detail-grid">
-            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p4">COPY</button></div><pre id="p4">请根据 data/solver_convergence.csv 生成论文风格 Matplotlib 图。
-
-要求：高对比配色、粗线条、清晰 marker、右上角图例；输出 PNG 和 PDF；代码参数集中，方便替换数据。</pre></div>
-            <div class="verify"><h4>输出文件</h4><ul><li>outputs/paper_style_plot.png</li><li>outputs/paper_style_plot.pdf</li><li>plot_paper_style.py</li></ul><div class="path">case_pack/04_plot_style</div></div>
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="screen" id="level5" data-section>
     <div class="wrap level-card">
       <div class="level-art"><img src="assets/svg/web-factory.svg" alt="论文复现报告工厂动画"></div>
       <div class="level-content">
-        <div class="level-top"><span class="level-no">LEVEL 05</span><span class="chip hot">Vibe Coding + Vibe Research</span></div>
+        <div class="level-top"><span class="level-no">LEVEL 03</span><span class="chip hot">原 LEVEL 05 · Vibe Coding + Vibe Research</span></div>
         <span class="pain">痛点：论文算例难复现、图表对比和报告整理耗时</span>
         <h2 class="level-title">Vibe Coding + Vibe Research：从论文到复现报告</h2>
         <div class="flow">
@@ -425,7 +411,7 @@
         <details class="details" open>
           <summary>展开提示词、报告入口与视频替换说明</summary>
           <div class="detail-grid">
-            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p5">COPY</button></div><pre id="p5">请用 Python 复现这篇论文中的算例 1，直到误差指标和原文保持一致。
+            <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p3">COPY</button></div><pre id="p3">请用 Python 复现这篇论文中的算例 1，直到误差指标和原文保持一致。
 
 要求：读取论文 PDF，定位算例设置；实现 GBDF2-IMEX 数值格式；输出时间和空间误差图；制作中文 HTML 对比报告，包含原文截图、复现图和关键误差表。</pre></div>
             <div class="verify"><h4>本案例产物</h4><ul><li>复现代码：reproduce_gbdf2_fkpp/src/gbdf2_example1.py</li><li>对比报告：reproduce_gbdf2_fkpp/report.html</li><li>视频占位：assets/videos/fkpp_reproduction_demo.mp4</li></ul><div class="path">../reproduce_gbdf2_fkpp/report.html</div><a class="btn blue" href="../reproduce_gbdf2_fkpp/report.html">打开对比报告</a></div>
@@ -467,7 +453,7 @@
         <h2>模型负责理解，工具负责执行，人负责判断。</h2>
         <p>科研核心结论、数据可信度、公式推导和事实边界，永远要回到人来核验。</p>
         <div class="actions"><a class="btn red" href="#start">RESTART</a><a class="btn blue" href="docs/operation_guide.md">操作指南</a><a class="btn white" href="case_pack/">打开素材包</a></div>
-        <p style="font-size:16px;margin-top:18px">快捷键：<span class="kbd">↑</span>/<span class="kbd">↓</span> 切换，<span class="kbd">1</span>-<span class="kbd">5</span> 跳关，<span class="kbd">Home</span>/<span class="kbd">End</span> 首尾。</p>
+        <p style="font-size:16px;margin-top:18px">快捷键：<span class="kbd">↑</span>/<span class="kbd">↓</span> 切换，<span class="kbd">1</span>-<span class="kbd">3</span> 跳关，<span class="kbd">Home</span>/<span class="kbd">End</span> 首尾。</p>
       </div>
     </div>
   </section>

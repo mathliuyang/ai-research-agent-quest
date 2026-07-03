@@ -22,41 +22,31 @@ index.html
 
 - `↓` / `→`：下一屏
 - `↑` / `←`：上一屏
-- `1`-`5`：跳到对应案例
+- `1`-`3`：跳到对应案例
 - `Home`：回到开头
 - `End`：跳到结尾
 
-## 代码案例
-
-```bash
-cd case_pack/01_code_debug
-python src/analyze_experiment.py
-```
-
-该脚本故意带有问题，用于让 Agent 现场修复。参考答案在：
-
-```text
-src/analyze_experiment_solution.py
-```
-
-## 专利案例
+## Level 01：专利 PDF 整理
 
 ```bash
 cd case_pack/02_patent_pdf
 python patent_pdf_extractor.py sample_pdfs --out outputs/sample_catalog.txt --csv outputs/sample_info.csv
 ```
 
-## 绘图案例
+## Level 02：Nature Skills 演示
 
-```bash
-cd case_pack/04_plot_style
-python plot_paper_style.py
-```
-
-## 小工具案例
-
-双击：
+按页面中的三段提示词现场演示：
 
 ```text
-case_pack/05_report_tool/index.html
+帮我生成一个模拟数据存到 csv 文件中，我需要对其进行科研绘图。
+请帮我用 nature-figure 来完成上述数据的科研绘图。
+帮我生成一段对这个结果的中文描述。接下来利用 nature-polishing 对上述的结果描述进行学术英语写作。
+```
+
+## Level 03：论文复现报告
+
+打开：
+
+```text
+../reproduce_gbdf2_fkpp/report.html
 ```

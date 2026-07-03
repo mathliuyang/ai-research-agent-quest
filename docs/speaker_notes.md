@@ -2,46 +2,36 @@
 
 ## 主线
 
-这次分享不是工具清单，而是一次 AI+科研工作流经验分享。先讲清 AI 的三种入口，再讲模型怎么选、工具怎么配，最后用 5 个科研案例落地。
+这次分享不是工具清单，而是一次 AI+科研工作流经验分享。先讲清 Vibe Coding 和 Vibe Research，再讲入口、模型和工具组合，最后用 3 个科研案例落地。
 
 ## 开场逻辑
 
 1. AI 可以提高论文、代码、绘图和汇报效率。
-2. 但不同入口能力不同：聊天框、IDE、CLI 不是同一种东西。
+2. 不同入口能力不同：聊天框、Agent 工作台、IDE、CLI 不是同一种东西。
 3. 先选对入口，再选模型和工具，最后用案例验证效果。
 
-## 三种交互方式
+## 四种交互方式
 
-- 聊天框：ChatGPT、Kimi、豆包、Gemini、Claude、秘塔。适合读论文、翻译、总结、头脑风暴。
-- IDE：Trae、Cursor、VS Code + 插件、Codex App。适合读项目、改代码、跑脚本、看报错。
-- CLI：Codex CLI、Claude Code、命令行自动化。适合服务器、批处理、远程环境和长期任务。
+- 聊天框：ChatGPT、Kimi、豆包、Gemini。适合读论文、翻译、总结和头脑风暴。
+- AI Agent 工作台：Codex App、Trae Solo/Work 等。适合把完整任务交给 Agent 执行。
+- IDE / 编辑器型工具：Trae、VSCode、Cursor。适合 Python、C、LaTeX、Markdown、SSH 和工程调试。
+- CLI / 命令行 Agent：Codex CLI、Claude Code。适合服务器、批处理、远程环境和无图形界面场景。
 
 ## 模型推荐
 
-推荐组合：ChatGPT + Kimi + 豆包 + Gemini。
+推荐组合：ChatGPT + Kimi + 豆包 + DeepSeek + Gemini。
 
-- 国产模型一般可以免费用，但可能排队、限额或功能分层。
-- ChatGPT 免费可用，但重要任务建议开会员。
-- Claude 能力强，但账号、验证和封号风险较高，不作为主推荐。
-- Gemini 可作为备用，优惠和价格以购买页或活动页为准。
+- ChatGPT 适合复杂问题、新项目底座、代码和写作主力。
+- Kimi 适合长文献、文献调研和复杂中文问题。
+- 豆包适合手机端、多模态和日常材料处理。
+- DeepSeek 适合作为便宜 API 备用。
+- Gemini 可搭配 NotebookLM 做资料阅读。
 
-## 工具推荐
+## 三个案例串联
 
-主工作流：Codex App + Trae IDE。
-
-- Trae 是基于 AI 底座构建的编程 IDE，对中文用户更友好。
-- VS Code 用户可以平滑迁移到 Trae。
-- 常见科研操作，如 Python、Markdown、LaTeX、SSH 远程，Trae 基本能覆盖。
-- 少见插件和高阶 VS Code 工作流，可继续用 VS Code 作为备选。
-- 服务器或批处理场景，可补充 Codex CLI。
-
-## 5 个案例串联
-
-- 代码调试：从复制报错到进入项目。
-- 专利整理：从一批 PDF 到结构化 CSV/TXT。
-- LaTeX 翻译：翻译自然语言，保护论文结构。
-- 论文绘图：把参考图风格拆成绘图参数。
-- 网页/小工具：把科研想法做成可打开原型。
+- Level 01：原 Level 02，专利整理。从一批 PDF 到结构化 CSV/TXT。
+- Level 02：新增 Nature Skills 实战。用三段提示词演示模拟数据、nature-figure 科研绘图、中文结果描述，再用 nature-polishing 写成学术英语。
+- Level 03：原 Level 05，Vibe Coding + Vibe Research。从论文 PDF 到代码复现、误差图和中文报告。
 
 ## 结尾观点
 

@@ -8,16 +8,11 @@ ai_research_agent_showcase_v2/
     css/arcade.css
     js/showcase.js
     svg/
-      agent-battle.svg
       pdf-belt.svg
-      latex-lock.svg
-      plot-scan.svg
+      nature-skill-loop.svg
       web-factory.svg
   case_pack/
-    01_code_debug/
     02_patent_pdf/
-    03_latex_translation/
-    04_plot_style/
     05_report_tool/
   docs/
     speaker_notes.md
@@ -27,4 +22,4 @@ ai_research_agent_showcase_v2/
     sources.md
 ```
 
-所有展示页资源均使用相对路径。
+首页当前只展示 3 个案例：原 Level 02、新增 Nature Skills 演示、原 Level 05。仓库中保留的其他历史素材包可继续作为备用材料，不在首页关卡中展示。

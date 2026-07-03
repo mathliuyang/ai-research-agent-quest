@@ -15,7 +15,7 @@
 ..\..\..\reproduce_gbdf2_fkpp\report.html
 ```
 
-从课件主页也可以在第 5 关中点击或查看该路径。
+从课件主页也可以在第 3 关中点击或查看该路径。
 
 ## Video
 
@@ -25,4 +25,4 @@
 assets/videos/fkpp_reproduction_demo.mp4
 ```
 
-然后在主课件第 5 关的视频窗口中加入对应 `<source>` 即可播放。
+然后在主课件第 3 关的视频窗口中加入对应 `<source>` 即可播放。
