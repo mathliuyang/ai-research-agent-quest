@@ -22,4 +22,4 @@ ai_research_agent_showcase_v2/
     sources.md
 ```
 
-首页当前只展示 3 个案例：原 Level 02、新增 Nature Skills 演示、原 Level 05。仓库中保留的其他历史素材包可继续作为备用材料，不在首页关卡中展示。
+首页当前只展示 3 个案例：专利 PDF 整理、Nature Skills 演示、论文复现报告。仓库中保留的其他历史素材包可继续作为备用材料，不在首页关卡中展示。

@@ -22,7 +22,7 @@
 本素材包暂不包含原始录屏。剪辑完成后，推荐放到：
 
 ```text
-assets/videos/fkpp_reproduction_demo.mp4
+assets/videos/level-03-paper-reproduction-demo.mp4
 ```
 
 然后在主课件第 3 关的视频窗口中加入对应 `<source>` 即可播放。

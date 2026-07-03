@@ -21,6 +21,25 @@
     const next=Math.max(0,Math.min(sections.length-1,current+delta));
     sections[next].scrollIntoView({behavior:"smooth",block:"start"});
   }
+  function activeVideoForKeys(){
+    const fullscreen=document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+    if(fullscreen){
+      if(fullscreen.matches && fullscreen.matches("video")) return fullscreen;
+      if(fullscreen.querySelector) return fullscreen.querySelector("video");
+    }
+    return document.activeElement && document.activeElement.tagName==="VIDEO" ? document.activeElement : null;
+  }
+  function seekVideo(video, seconds){
+    if(!video || !Number.isFinite(video.duration)) return;
+    video.currentTime=Math.max(0,Math.min(video.duration,video.currentTime+seconds));
+  }
+  document.addEventListener("keydown",(e)=>{
+    const video=activeVideoForKeys();
+    if(!video || (e.key!=="ArrowLeft" && e.key!=="ArrowRight")) return;
+    e.preventDefault();
+    e.stopPropagation();
+    seekVideo(video,e.key==="ArrowRight" ? 10 : -10);
+  },true);
   document.addEventListener("keydown",(e)=>{
     const active=document.activeElement;
     const previewOpen=document.querySelector("[data-video-lightbox].open");
@@ -50,12 +69,62 @@
     });
   });
 
+  const treasureStage=document.querySelector("[data-treasure-stage]");
+  const treasureToggle=treasureStage ? treasureStage.querySelector("[data-treasure-toggle]") : null;
+  const treasureHint=treasureStage ? treasureStage.querySelector("[data-treasure-hint]") : null;
+  const treasureItems=treasureStage ? [...treasureStage.querySelectorAll(".treasure-item")] : [];
+  const treasureDetail=treasureStage ? treasureStage.querySelector("[data-treasure-detail]") : null;
+  const mobileTreasure=()=>window.matchMedia("(max-width: 680px)").matches;
+
+  function setTreasureDetail(item){
+    if(!treasureDetail || !item) return;
+    const title=item.querySelector("span")?.textContent || "";
+    const kind=item.querySelector("strong")?.textContent || "";
+    const desc=item.querySelector("p")?.textContent || "";
+    const link=treasureDetail.querySelector("a");
+    treasureDetail.querySelector("b").textContent=`${title} · ${kind}`;
+    treasureDetail.querySelector("span").textContent=desc;
+    if(link) link.href=item.href;
+  }
+  function clearTreasureActive(){
+    treasureItems.forEach(item=>item.classList.remove("active"));
+  }
+  function openTreasure(){
+    if(!treasureStage || !treasureToggle) return;
+    treasureStage.classList.remove("opened");
+    void treasureStage.offsetWidth;
+    treasureStage.classList.add("opened");
+    treasureToggle.setAttribute("aria-expanded","true");
+    if(treasureHint) treasureHint.textContent="重新开启补给箱";
+    clearTreasureActive();
+    if(treasureDetail){
+      treasureDetail.querySelector("b").textContent="点一个图标查看简介";
+      treasureDetail.querySelector("span").textContent="网站、插件和软件会分批从宝箱里蹦出来。";
+      const link=treasureDetail.querySelector("a");
+      if(link) link.href="#";
+    }
+  }
+  if(treasureToggle) treasureToggle.addEventListener("click",openTreasure);
+  treasureItems.forEach(item=>{
+    item.addEventListener("click",(e)=>{
+      if(!mobileTreasure()) return;
+      e.preventDefault();
+      if(!treasureStage.classList.contains("opened")) openTreasure();
+      clearTreasureActive();
+      item.classList.add("active");
+      setTreasureDetail(item);
+    });
+    item.addEventListener("focus",()=>{
+      if(mobileTreasure()) setTreasureDetail(item);
+    });
+  });
+
   const lightbox=document.querySelector("[data-video-lightbox]");
   const lightboxVideo=lightbox ? lightbox.querySelector("video") : null;
   const lightboxTitle=lightbox ? lightbox.querySelector("#lightboxTitle") : null;
   const closeBtn=lightbox ? lightbox.querySelector(".lightbox-close") : null;
   function playDemoLoops(){
-    document.querySelectorAll(".demo-card video").forEach(video=>{
+    document.querySelectorAll(".demo-card video[autoplay]").forEach(video=>{
       video.play().catch(()=>{});
     });
   }
@@ -90,5 +159,6 @@
   }
   document.addEventListener("keydown",(e)=>{
     if(e.key==="Escape" && lightbox && lightbox.classList.contains("open")) closePreview();
+    if(e.key==="Escape" && treasureStage) clearTreasureActive();
   });
 })();

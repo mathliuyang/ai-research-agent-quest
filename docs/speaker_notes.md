@@ -29,9 +29,9 @@
 
 ## 三个案例串联
 
-- Level 01：原 Level 02，专利整理。从一批 PDF 到结构化 CSV/TXT。
+- Level 01：专利整理。从一批 PDF 到结构化 CSV/TXT。
 - Level 02：新增 Nature Skills 实战。用三段提示词演示模拟数据、nature-figure 科研绘图、中文结果描述，再用 nature-polishing 写成学术英语。
-- Level 03：原 Level 05，Vibe Coding + Vibe Research。从论文 PDF 到代码复现、误差图和中文报告。
+- Level 03：Vibe Coding + Vibe Research。从论文 PDF 到代码复现、误差图和中文报告。
 
 ## 结尾观点
 

@@ -333,7 +333,7 @@
     <div class="wrap level-card">
       <div class="level-art"><img src="assets/svg/pdf-belt.svg" alt="PDF 传送带动画"></div>
       <div class="level-content">
-        <div class="level-top"><span class="level-no">LEVEL 01</span><span class="chip hot">原 LEVEL 02 · 真实专利材料</span></div>
+        <div class="level-top"><span class="level-no">LEVEL 01</span><span class="chip hot">真实专利材料</span></div>
         <span class="pain">痛点：一批专利 PDF 手工录字段慢且容易错</span>
         <h2 class="level-title">36 个 PDF → 成果统计表</h2>
         <div class="flow">
@@ -387,7 +387,7 @@
     <div class="wrap level-card">
       <div class="level-art"><img src="assets/svg/web-factory.svg" alt="论文复现报告工厂动画"></div>
       <div class="level-content">
-        <div class="level-top"><span class="level-no">LEVEL 03</span><span class="chip hot">原 LEVEL 05 · Vibe Coding + Vibe Research</span></div>
+        <div class="level-top"><span class="level-no">LEVEL 03</span><span class="chip hot">Vibe Coding + Vibe Research</span></div>
         <span class="pain">痛点：论文算例难复现、图表对比和报告整理耗时</span>
         <h2 class="level-title">Vibe Coding + Vibe Research：从论文到复现报告</h2>
         <div class="flow">
@@ -396,15 +396,14 @@
           <div class="step"><b>图表对比</b><span>生成时间/空间误差曲线</span></div>
           <div class="step"><b>中文报告</b><span>嵌入原文截图与复现结果</span></div>
         </div>
-        <div class="video-demo" aria-label="录屏视频占位窗口">
-          <div class="video-demo-head"><span>现场录屏窗口</span><span>剪辑后替换视频源</span></div>
+        <div class="video-demo" aria-label="Vibe Coding 和 Vibe Research 复现流程录屏">
+          <div class="video-demo-head"><span>现场录屏窗口</span><span>点击进入大屏预览</span></div>
           <div class="video-demo-window">
-            <video controls preload="metadata" aria-label="Vibe Coding 和 Vibe Research 复现流程录屏">
-              剪辑后将视频放到 assets/videos/fkpp_reproduction_demo.mp4，并在这里加入 source 标签。
-            </video>
-            <div class="video-placeholder">
-              <b>VIDEO PLACEHOLDER</b>
-              <span>这里预留播放窗口：放入剪辑后的视频即可展示“论文 → 代码 → 图表 → 报告”的完整流程。</span>
+            <div class="demo-card level-video-card" data-video="assets/videos/level-03-paper-reproduction-demo.mp4" data-title="LEVEL 03：论文复现报告演示">
+              <video muted playsinline preload="metadata" aria-label="Vibe Coding 和 Vibe Research 复现流程录屏预览">
+                <source src="assets/videos/level-03-paper-reproduction-demo.mp4" type="video/mp4">
+              </video>
+              <button class="demo-play" type="button">大屏预览</button>
             </div>
           </div>
         </div>
@@ -414,7 +413,7 @@
             <div class="prompt"><div class="prompt-head"><span>PROMPT</span><button class="copy" data-copy="p3">COPY</button></div><pre id="p3">请用 Python 复现这篇论文中的算例 1，直到误差指标和原文保持一致。
 
 要求：读取论文 PDF，定位算例设置；实现 GBDF2-IMEX 数值格式；输出时间和空间误差图；制作中文 HTML 对比报告，包含原文截图、复现图和关键误差表。</pre></div>
-            <div class="verify"><h4>本案例产物</h4><ul><li>复现代码：reproduce_gbdf2_fkpp/src/gbdf2_example1.py</li><li>对比报告：reproduce_gbdf2_fkpp/report.html</li><li>视频占位：assets/videos/fkpp_reproduction_demo.mp4</li></ul><div class="path">../reproduce_gbdf2_fkpp/report.html</div><a class="btn blue" href="../reproduce_gbdf2_fkpp/report.html">打开对比报告</a></div>
+            <div class="verify"><h4>本案例产物</h4><ul><li>复现代码：reproduce_gbdf2_fkpp/src/gbdf2_example1.py</li><li>对比报告：reproduce_gbdf2_fkpp/report.html</li><li>演示视频：assets/videos/level-03-paper-reproduction-demo.mp4</li></ul><div class="path">../reproduce_gbdf2_fkpp/report.html</div><a class="btn blue" href="../reproduce_gbdf2_fkpp/report.html">打开对比报告</a></div>
           </div>
         </details>
       </div>
@@ -423,13 +422,94 @@
 
   <section class="screen" id="tools" data-section>
     <div class="wrap">
-      <div class="section-head"><h2 class="title">更多科研效率连招</h2><p class="desc">把工具串起来，而不是指望一个工具做完所有事。</p></div>
-      <div class="tool-grid">
-        <div class="tool"><h3>Zotero + AI</h3><p>文献管理、BibTeX、综述表。</p></div>
-        <div class="tool"><h3>Doc2X + AI</h3><p>PDF 转 Word / LaTeX / Markdown 后再校对。</p></div>
-        <div class="tool"><h3>Kimi / 秘塔 / ChatGPT</h3><p>快速读论文、备课、整理组会材料。</p></div>
-        <div class="tool"><h3>图像能力</h3><p>科研配图、技术路线图、方法示意图。</p></div>
-        <div class="tool"><h3>Trae / Cursor / Codex</h3><p>把想法变成脚本、网页和小工具。</p></div>
+      <div class="treasure-stage" data-treasure-stage>
+        <div class="treasure-intro">
+          <span class="eyebrow">BONUS STAGE</span>
+          <h2 class="title">工具补给</h2>
+          <p class="desc">开启宝箱，拾取科研工作流里的常用网站、插件和桌面软件。</p>
+        </div>
+
+        <div class="treasure-arena" aria-label="隐藏补给箱工具彩蛋">
+          <button class="treasure-chest" type="button" data-treasure-toggle aria-expanded="false" aria-controls="treasureItems">
+            <span class="chest-lid"><span>TOOLS</span></span>
+            <span class="chest-lock">OPEN</span>
+            <span class="chest-base"></span>
+            <span class="chest-glow"></span>
+          </button>
+          <div class="treasure-burst" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="treasure-hint" data-treasure-hint>开启科研工具箱</p>
+
+          <div class="treasure-items" id="treasureItems">
+            <a class="treasure-item web recommended" style="--x:-310px;--y:-134px;--d:.92s" href="https://zh.recompressor.com/" target="_blank" rel="noopener" aria-label="图像优化 Recompressor：压缩与优化图片体积">
+              <img src="assets/logos/tool-recompressor.svg" alt="Recompressor logo"><span>图像优化</span><em>最优</em>
+              <strong>网站</strong><p>压缩与优化图片体积，适合网页、PPT、报告配图收尾。</p><b>官网</b>
+            </a>
+            <a class="treasure-item web" style="--x:-155px;--y:-184px;--d:1.04s" href="https://doc2x.noedgeai.com/" target="_blank" rel="noopener" aria-label="Doc2X：PDF 转 Word Markdown LaTeX">
+              <img src="assets/logos/tool-doc2x.webp" alt="Doc2X logo"><span>Doc2X</span>
+              <strong>网站</strong><p>PDF 转 Word、Markdown、LaTeX，把论文材料拆出来再交给 AI 校对。</p><b>官网</b>
+            </a>
+            <a class="treasure-item web" style="--x:0px;--y:-214px;--d:1.16s" href="https://youmind.com/zh-CN/gpt-image-2-prompts" target="_blank" rel="noopener" aria-label="YouMind：GPT Image 2 提示词参考站">
+              <img src="assets/logos/tool-youmind.png" alt="YouMind logo"><span>YouMind</span>
+              <strong>网站</strong><p>GPT Image 2 提示词参考站，适合找科研示意图和视觉风格灵感。</p><b>官网</b>
+            </a>
+            <a class="treasure-item web" style="--x:155px;--y:-184px;--d:1.28s" href="https://dy.kukutool.com/zh-Hans-SG" target="_blank" rel="noopener" aria-label="无水印解析工具：保存公开演示素材">
+              <img src="assets/logos/tool-kukutool.png" alt="Kukutool logo"><span>无水印解析</span>
+              <strong>网站</strong><p>处理短视频素材链接，适合保存公开演示素材和课堂参考片段。</p><b>官网</b>
+            </a>
+            <a class="treasure-item web" style="--x:310px;--y:-134px;--d:1.4s" href="https://cloud.siliconflow.cn/me/models" target="_blank" rel="noopener" aria-label="硅基流动：模型 API 入口">
+              <img src="assets/logos/tool-siliconflow.png" alt="SiliconFlow logo"><span>硅基流动</span>
+              <strong>网站</strong><p>国产与开源模型 API 入口，适合低成本测试模型、脚本和 Agent 调用。</p><b>官网</b>
+            </a>
+
+            <a class="treasure-item plugin" style="--x:-310px;--y:36px;--d:1.52s" href="https://www.easyscholar.cc/" target="_blank" rel="noopener" aria-label="Easy Scholar：显示期刊等级和 SCI 分区">
+              <img src="assets/logos/tool-easyscholar.jpg" alt="Easy Scholar logo"><span>Easy Scholar</span>
+              <strong>浏览器插件</strong><p>检索论文时快速看期刊等级、分区和常用评价信息。</p><b>官网</b>
+            </a>
+            <a class="treasure-item plugin" style="--x:-155px;--y:94px;--d:1.64s" href="https://www.itab.link/" target="_blank" rel="noopener" aria-label="iTab：浏览器新标签页和快捷入口">
+              <img src="assets/logos/tool-itab.png" alt="iTab logo"><span>iTab</span>
+              <strong>浏览器插件</strong><p>把常用 AI、文献、邮箱、网盘入口整理成一个干净的新标签页。</p><b>官网</b>
+            </a>
+            <a class="treasure-item plugin" style="--x:0px;--y:126px;--d:1.76s" href="https://adguard.com/" target="_blank" rel="noopener" aria-label="AdGuard：广告拦截器">
+              <img src="assets/logos/tool-adguard.png" alt="AdGuard logo"><span>AdGuard</span>
+              <strong>浏览器插件</strong><p>过滤广告和干扰元素，读资料、查文献时页面更清爽。</p><b>官网</b>
+            </a>
+            <a class="treasure-item plugin" style="--x:155px;--y:94px;--d:1.88s" href="https://immersivetranslate.com/" target="_blank" rel="noopener" aria-label="沉浸式翻译：双语网页 PDF 和视频字幕翻译">
+              <img src="assets/logos/tool-immersive-translate.svg" alt="Immersive Translate logo"><span>沉浸式翻译</span>
+              <strong>浏览器插件</strong><p>双语网页、PDF 和视频字幕翻译，适合追踪海外论文、文档和模型更新。</p><b>官网</b>
+            </a>
+            <a class="treasure-item plugin" style="--x:310px;--y:36px;--d:2s" href="https://www.zotero.org/download/connectors" target="_blank" rel="noopener" aria-label="Zotero Connector：网页文献一键入库">
+              <img src="assets/logos/tool-zotero.png" alt="Zotero Connector logo"><span>Zotero Connector</span>
+              <strong>浏览器插件</strong><p>从网页、Google Scholar 和出版社页面一键保存文献元数据。</p><b>官网</b>
+            </a>
+
+            <a class="treasure-item software" style="--x:-246px;--y:226px;--d:2.12s" href="https://typora.io/" target="_blank" rel="noopener" aria-label="Typora：Markdown 写作软件">
+              <img src="assets/logos/tool-typora.png" alt="Typora logo"><span>Typora</span>
+              <strong>软件</strong><p>Markdown 写作、笔记和报告初稿，适合轻量整理科研材料。</p><b>官网</b>
+            </a>
+            <a class="treasure-item software" style="--x:-92px;--y:214px;--d:2.24s" href="https://www.zotero.org/" target="_blank" rel="noopener" aria-label="Zotero：文献管理软件">
+              <img src="assets/logos/tool-zotero.png" alt="Zotero logo"><span>Zotero</span>
+              <strong>软件</strong><p>文献库、引用、PDF 管理和 BibTeX，是论文写作的底座工具。</p><b>官网</b>
+            </a>
+            <a class="treasure-item software" style="--x:62px;--y:246px;--d:2.36s" href="https://www.doubao.com/download/desktop" target="_blank" rel="noopener" aria-label="豆包桌面端：多模态 AI 助手">
+              <img src="assets/logos/tool-doubao.png" alt="豆包 logo"><span>豆包桌面端</span>
+              <strong>软件</strong><p>多模态问答、截图解释、日常材料处理，适合随手问和看图。</p><b>官网</b>
+            </a>
+            <a class="treasure-item software" style="--x:192px;--y:210px;--d:2.48s" href="https://openai.com/codex/" target="_blank" rel="noopener" aria-label="Codex：OpenAI 编码 Agent">
+              <img src="assets/logos/tool-codex.png" alt="OpenAI Codex logo"><span>Codex</span>
+              <strong>软件</strong><p>Agent 任务执行、读项目、改代码、跑验证，也可和 Trae Work 形成组合。</p><b>官网</b>
+            </a>
+            <a class="treasure-item software" style="--x:310px;--y:184px;--d:2.6s" href="https://www.trae.ai/download" target="_blank" rel="noopener" aria-label="Trae：AI 原生 IDE">
+              <img src="assets/logos/tool-trae.png" alt="Trae logo"><span>Trae</span>
+              <strong>软件</strong><p>AI 原生 IDE，适合代码、网页和科研脚本迭代。</p><b>官网</b>
+            </a>
+          </div>
+
+          <div class="treasure-mobile-detail" data-treasure-detail aria-live="polite">
+            <b>点一个图标查看简介</b>
+            <span>网站、插件和软件会分批从宝箱里蹦出来。</span>
+            <a href="#" target="_blank" rel="noopener">官网</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

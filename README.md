@@ -23,9 +23,9 @@ index.html    主展示入口
 
 ## 演示案例
 
-- Level 01：原 Level 02，批量整理专利 PDF。
+- Level 01：批量整理专利 PDF。
 - Level 02：新增 Nature Skills 实战演示，模拟数据、nature-figure 科研绘图、中文结果描述和 nature-polishing 学术英语写作。
-- Level 03：原 Level 05，Vibe Coding + Vibe Research，从论文到复现报告。
+- Level 03：Vibe Coding + Vibe Research，从论文到复现报告。
 
 时间有限时，优先打开 `index.html`、`case_pack/02_patent_pdf` 和 `../reproduce_gbdf2_fkpp/report.html`，中间新增的 Nature Skills 演示可直接按页面提示词现场运行。
 
