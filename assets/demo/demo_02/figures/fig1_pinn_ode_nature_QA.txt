@@ -1,0 +1,41 @@
+Core conclusion:
+The PINN recovers the analytical ODE solution while reducing physics, initial-condition and data losses to a low-error converged state.
+
+Figure archetype:
+Quantitative grid with a hero solution panel.
+
+Target journal/output:
+Nature-family double-column style; editable SVG and PDF plus high-resolution TIFF/PNG preview.
+
+Backend:
+Python only, matplotlib.
+
+Final size:
+7.2 x 5.15 inches before tight bounding box export.
+
+Panel map:
+a: analytical solution, noisy observations and PINN prediction.
+b: total, PDE, initial-condition and data loss trajectories.
+c: validation RMSE and relative L2 convergence.
+d: PDE residual over the computational domain.
+e: checkpoint-level RMSE and residual metrics.
+
+Source data:
+pinn_ode_solution_data.csv, pinn_training_loss_history.csv, pinn_epoch_metrics.csv.
+
+Key checks:
+solution rows = 301
+loss rows = 501
+final total loss = 0.000760226
+final relative L2 error = 0.00921676
+max absolute solution error = 0.0123132
+mean absolute PDE residual = 0.017204
+
+Exported files:
+fig1_pinn_ode_nature.svg
+fig1_pinn_ode_nature.pdf
+fig1_pinn_ode_nature.tiff
+fig1_pinn_ode_nature.png
+
+Reviewer risk:
+This is simulated single-run data; a formal manuscript should add random-seed or cross-run uncertainty if claiming optimizer robustness.

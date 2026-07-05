@@ -1,0 +1,3 @@
+Example 4.1 reproduction finished.
+Long-time run max H1 error against exact solution: 1.608e-07
+Elapsed seconds: 46.39
